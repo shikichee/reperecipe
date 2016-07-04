@@ -15,6 +15,8 @@
 　今ある材料を入れると、おすすめのレシピ一覧が見れる。
 - 作るレシピを元に、買い物リストを作成できる。
 
+## 遷移図
+![画面遷移図](https://github.com/shikichee/reperecipe/blob/images/images/screenTransitionDiagram.jpg)
 
 
 
