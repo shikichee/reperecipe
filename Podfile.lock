@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (3.4.1)
+  - HxColor (2.0.0)
+  - Moya (6.5.0):
+    - Moya/Core (= 6.5.0)
+  - Moya/Core (6.5.0):
+    - Alamofire (~> 3.0)
+    - Result (~> 2.0)
+  - ObjectMapper (1.3.0)
+  - PageMenu (1.2.9)
+  - Realm (1.0.1):
+    - Realm/Headers (= 1.0.1)
+  - Realm/Headers (1.0.1)
+  - RealmSwift (1.0.1):
+    - Realm (= 1.0.1)
+  - Result (2.1.1)
+
+DEPENDENCIES:
+  - HxColor
+  - Moya
+  - ObjectMapper
+  - PageMenu
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  HxColor: dbf82e4363eaef1314f683514e8bb2716a00554d
+  Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
+  ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
+  RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
+  Result: 822c879f145943320cc80a9a8372378e3d699fe4
+
+PODFILE CHECKSUM: 073cad6df782f310516893c3c76413f073b7b476
+
+COCOAPODS: 1.0.1
