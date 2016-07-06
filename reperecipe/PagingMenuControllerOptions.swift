@@ -29,13 +29,13 @@ struct MenuOptions: MenuViewCustomizable {
     
     struct MenuItemMyRecipe: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let title = MenuItemText(text: "献立")
+            let title = MenuItemText(text: "マイレシピ")
             return .Text(title: title)
         }
     }
     struct MenuItemMenu: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let title = MenuItemText(text: "マイレシピ")
+            let title = MenuItemText(text: "献立")
             return .Text(title: title)
         }
     }

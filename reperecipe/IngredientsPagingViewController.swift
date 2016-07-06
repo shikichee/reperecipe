@@ -10,6 +10,9 @@ import UIKit
 
 class IngredientsPagingViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     class func instantiateFromStoryboard() -> IngredientsPagingViewController {
         let storyboard = UIStoryboard(name: "PagingViewController", bundle: nil)
         return storyboard.instantiateViewControllerWithIdentifier(String(self)) as! IngredientsPagingViewController
@@ -24,3 +27,18 @@ class IngredientsPagingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+extension IngredientsPagingViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("IngredientCell") as! IngredientCell
+        cell.nameLabel.text = "にんじん"
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+}
+extension IngredientsPagingViewController: UITableViewDelegate {
+    
+}
+
