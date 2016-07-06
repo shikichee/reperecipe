@@ -1,37 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hji-h7-4h3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8gi-uv-RBj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="m4C-Jl-n88">
-            <objects>
-                <viewController id="8Bp-Cz-eGo" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Sw5-jP-Gju"/>
-                        <viewControllerLayoutGuide type="bottom" id="UOg-PX-TY5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rgE-jX-xvE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="リピレシピ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHq-ut-pLY">
-                                <rect key="frame" x="102" y="192" width="171" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TFi-Vh-xmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="476.5" y="237.5"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="bOI-JB-70w">
             <objects>
@@ -45,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-r9-LwW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <connections>
                                     <segue destination="aED-4X-Yih" kind="embed" id="Vts-u2-wRO"/>
                                 </connections>
@@ -58,21 +31,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knG-5t-If1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990.5" y="237.5"/>
+            <point key="canvasLocation" x="1802.5" y="237.5"/>
         </scene>
-        <!--Paging Menu Controller-->
+        <!--リピレシピ-->
         <scene sceneID="eQW-pQ-Vt8">
             <objects>
-                <viewController id="aED-4X-Yih" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
+                <viewController title="リピレシピ" id="aED-4X-Yih" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcb-cP-npK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qx2-ao-Bg0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xUj-m2-i2g">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wct-wx-ffl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560.5" y="237.5"/>
+            <point key="canvasLocation" x="2372.5" y="237.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AA0-8B-o2b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8gi-uv-RBj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3aK-Hk-XgO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hji-h7-4h3" kind="relationship" relationship="rootViewController" id="bAo-IL-egp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHE-Oo-rHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="237"/>
         </scene>
     </scenes>
 </document>

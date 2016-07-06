@@ -9,6 +9,15 @@
 import UIKit
 
 class RecipeCell: UITableViewCell {
+    @IBOutlet weak var recipeView: UIView!
     
     @IBOutlet weak var titleLabel: UILabel!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        recipeView.layer.borderWidth = 1.0
+        recipeView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
+        recipeView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        recipeView.layer.shadowOpacity = 0.5
+    }
 }

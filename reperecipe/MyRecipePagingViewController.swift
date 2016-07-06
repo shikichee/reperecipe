@@ -20,8 +20,7 @@ class MyRecipePagingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = ReperecipeColor.Background.orange
-    }
+   }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,6 +31,10 @@ class MyRecipePagingViewController: UIViewController {
 extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
+//        cell.recipeStackView.layer.borderWidth = 2.0
+//        cell.recipeStackView.layer.borderColor = ReperecipeColor.Brand.orange.CGColor
+//        cell.recipeStackView.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
+//        cell.recipeStackView.layer.shadowOpacity = 0.8
         
         cell.titleLabel.text = "カレーライス"
         return cell

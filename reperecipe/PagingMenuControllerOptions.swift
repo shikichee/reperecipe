@@ -13,15 +13,17 @@ private var pagingControllers: [UIViewController] {
     let myRecipeController = MyRecipePagingViewController.instantiateFromStoryboard()
     let menuController = MenuPagingViewController.instantiateFromStoryboard()
     let ingredientsController = IngredientsPagingViewController.instantiateFromStoryboard()
-    return [myRecipeController, menuController, ingredientsController]
+    let shoppingController = ShoppingPagingViewController.instantiateFromStoryboard()
+    return [myRecipeController, menuController, ingredientsController,shoppingController]
 }
 struct MenuItemMyRecipe: MenuItemViewCustomizable {}
 struct MenuItemMenu: MenuItemViewCustomizable {}
 struct MenuItemIngredients: MenuItemViewCustomizable {}
+struct MenuItemShopping: MenuItemViewCustomizable {}
 
 struct MenuOptions: MenuViewCustomizable {
     var itemsOptions: [MenuItemViewCustomizable] {
-        return [MenuItemMyRecipe(), MenuItemMenu(), MenuItemIngredients()]
+        return [MenuItemMyRecipe(), MenuItemMenu(), MenuItemIngredients(),MenuItemShopping()]
     }
     var displayMode: MenuDisplayMode {
         return .Infinite(widthMode: .Fixed(width: 80), scrollingMode: .ScrollEnabled)
@@ -42,6 +44,12 @@ struct MenuOptions: MenuViewCustomizable {
     struct MenuItemIngredients: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
             let title = MenuItemText(text: "食材")
+            return .Text(title: title)
+        }
+    }
+    struct MenuItemShopping: MenuItemViewCustomizable {
+        var displayMode: MenuItemDisplayMode {
+            let title = MenuItemText(text: "買い物")
             return .Text(title: title)
         }
     }
