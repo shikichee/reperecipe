@@ -14,8 +14,10 @@
 - 自分が作れる献立を事前に登録しておき、
 　今ある材料を入れると、おすすめのレシピ一覧が見れる。
 - 作るレシピを元に、買い物リストを作成できる。
+
 ## モック
-![7/5時点での白黒モック](http://adobe.ly/29lFh5x)
+[7/5時点での白黒モック](http://adobe.ly/29lFh5x)
+
 ## 遷移図
 ![画面遷移図](https://github.com/shikichee/reperecipe/blob/images/images/screenTransitionDiagram.jpg)
 
