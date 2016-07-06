@@ -6,12 +6,12 @@
 //  Copyright © 2016年 Takuya Shikichi. All rights reserved.
 //
 //
-//import UIKit
-//import RealmSwift
-//import ObjectMapper
-//
-//class Recipe: Object {
-////    dynamic var id = 0
-////    dynamic var name = ""
-////    dynamic var image: UIIMage? = nil
-//}
+import UIKit
+import RealmSwift
+import ObjectMapper
+
+class Recipe: Object {
+//    dynamic var title = ""
+//    dynamic var image: UIIMage? = nil
+//    dynamic var
+}

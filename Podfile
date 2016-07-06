@@ -6,9 +6,9 @@ target 'reperecipe' do
   use_frameworks!
 
   # Pods for reperecipe
-  pod 'HxColor' 
+  pod 'HxColor'
   pod 'ObjectMapper'
-  pod 'PageMenu'
+  pod 'PagingMenuController'
   pod 'RealmSwift'
   pod 'Moya'
 

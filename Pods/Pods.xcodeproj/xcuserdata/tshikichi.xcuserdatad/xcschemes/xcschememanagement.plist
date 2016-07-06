@@ -24,7 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PageMenu.xcscheme</key>
+		<key>PagingMenuController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,12 +62,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21C461B0CAD90DE64B07A5D212C5F829</key>
+		<key>2F0B2AA0215BB8F873FD496468D3BCF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F0B2AA0215BB8F873FD496468D3BCF2</key>
+		<key>4C99B8FA16C4D817487B6A4A75F7E35E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67C8D7F98FC0A27BBD38A3C95A1A5608</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9686C784392377A5C9700739ECF2B461</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A130AF304DFAD9C809B2B4F759AC053A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9F72DBF60FCCD2740CFAC3DA87E3713</key>
+		<key>C5A82921A1B97047AB8B8D3012D722A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,12 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4CE9BC5C4299B552AF33B5815BAF815</key>
+		<key>F3D179D974D635D41B47BF037664A1EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA362653E12547684747415242E62770</key>
+		<key>F4CE9BC5C4299B552AF33B5815BAF815</key>
 		<dict>
 			<key>primary</key>
 			<true/>

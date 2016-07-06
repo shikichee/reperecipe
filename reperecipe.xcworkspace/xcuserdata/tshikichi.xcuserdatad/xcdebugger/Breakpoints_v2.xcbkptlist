@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/PagingMenuController/Pod/Classes/MenuView.swift"
+            timestampString = "489402907.405603"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "MenuView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PagingMenuController.MenuView.init (menuOptions : PagingMenuController.MenuViewCustomizable) -&gt; PagingMenuController.MenuView"
+                  moduleName = "PagingMenuController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tshikichi/Documents/codes/reperecipe/Pods/PagingMenuController/Pod/Classes/MenuView.swift"
+                  timestampString = "489402907.557901"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "471">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PagingMenuController.MenuView.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PagingMenuController.MenuView&gt;"
+                  moduleName = "PagingMenuController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tshikichi/Documents/codes/reperecipe/Pods/PagingMenuController/Pod/Classes/MenuView.swift"
+                  timestampString = "489402907.558108"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "471">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PagingMenuController.MenuView.(currentIndex in _25C9E21B526A27A317851B1E59175968).getter : Swift.Int"
+                  moduleName = "PagingMenuController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tshikichi/Documents/codes/reperecipe/Pods/PagingMenuController/Pod/Classes/MenuView.swift"
+                  timestampString = "489402907.558211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PagingMenuController.MenuView.(currentIndex in _25C9E21B526A27A317851B1E59175968).setter : Swift.Int"
+                  moduleName = "PagingMenuController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tshikichi/Documents/codes/reperecipe/Pods/PagingMenuController/Pod/Classes/MenuView.swift"
+                  timestampString = "489402907.558306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/PagingMenuController/Pod/Classes/MenuView.swift"
+            timestampString = "489403678.516385"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "MenuView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "reperecipe/MyRecipePagingViewController.swift"
+            timestampString = "489468036.148601"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "MyRecipePagingViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

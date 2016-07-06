@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		22B57D9CCB777BB234FC78E3 /* Pods_reperecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAB004A68D8428D639AFB90 /* Pods_reperecipeUITests.framework */; };
 		487C8BAE1F3E735BD080A23D /* Pods_reperecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18EF0EE96F0D2DBC819316 /* Pods_reperecipeTests.framework */; };
-		4989A56D1D27B3340079BE50 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A56B1D27B3340079BE50 /* TableViewController.swift */; };
-		4989A56E1D27B3340079BE50 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4989A56C1D27B3340079BE50 /* TableViewController.xib */; };
+		495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A41D2CB4CB002BDC12 /* RecipeCell.swift */; };
 		4989A5701D27F7990079BE50 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A56F1D27F7990079BE50 /* Recipe.swift */; };
 		4989A5721D28F5580079BE50 /* ReperecipeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5711D28F5580079BE50 /* ReperecipeColor.swift */; };
-		4989A5761D28F69B0079BE50 /* ReperecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5751D28F69B0079BE50 /* ReperecipeViewController.swift */; };
+		4989A5781D2AA1AE0079BE50 /* MyRecipePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5771D2AA1AE0079BE50 /* MyRecipePagingViewController.swift */; };
+		4989A57A1D2AA3EC0079BE50 /* MenuPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */; };
+		4989A57C1D2AA4990079BE50 /* IngredientsPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */; };
+		4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */; };
+		4989A5801D2BA6ED0079BE50 /* PagingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */; };
 		49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858EA1D1F86A5006D0479 /* AppDelegate.swift */; };
 		49D858ED1D1F86A5006D0479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858EC1D1F86A5006D0479 /* ViewController.swift */; };
 		49D858F01D1F86A5006D0479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D858EE1D1F86A5006D0479 /* Main.storyboard */; };
@@ -21,7 +24,6 @@
 		49D858F51D1F86A5006D0479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D858F31D1F86A5006D0479 /* LaunchScreen.storyboard */; };
 		49D859001D1F86A5006D0479 /* reperecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858FF1D1F86A5006D0479 /* reperecipeTests.swift */; };
 		49D8590B1D1F86A5006D0479 /* reperecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8590A1D1F86A5006D0479 /* reperecipeUITests.swift */; };
-		49D859191D2011C7006D0479 /* RepeRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D859181D2011C7006D0479 /* RepeRecipeCell.swift */; };
 		BDA2ED65EE517BEEA67827D7 /* Pods_reperecipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0218F264224FEE0A62D9CD4 /* Pods_reperecipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,11 +48,14 @@
 		01E73142310325E034143088 /* Pods-reperecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipe/Pods-reperecipe.debug.xcconfig"; sourceTree = "<group>"; };
 		2A92A3A5FDEAFF8571F035E7 /* Pods-reperecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeTests/Pods-reperecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30D5026BA3169A798508A9B3 /* Pods-reperecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipe/Pods-reperecipe.release.xcconfig"; sourceTree = "<group>"; };
-		4989A56B1D27B3340079BE50 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		4989A56C1D27B3340079BE50 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		495101A41D2CB4CB002BDC12 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		4989A56F1D27F7990079BE50 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4989A5711D28F5580079BE50 /* ReperecipeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReperecipeColor.swift; sourceTree = "<group>"; };
-		4989A5751D28F69B0079BE50 /* ReperecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReperecipeViewController.swift; sourceTree = "<group>"; };
+		4989A5771D2AA1AE0079BE50 /* MyRecipePagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipePagingViewController.swift; sourceTree = "<group>"; };
+		4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPagingViewController.swift; sourceTree = "<group>"; };
+		4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsPagingViewController.swift; sourceTree = "<group>"; };
+		4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuControllerOptions.swift; sourceTree = "<group>"; };
+		4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PagingViewController.storyboard; sourceTree = "<group>"; };
 		49D858E71D1F86A5006D0479 /* reperecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reperecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D858EA1D1F86A5006D0479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D858EC1D1F86A5006D0479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +69,6 @@
 		49D859061D1F86A5006D0479 /* reperecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reperecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D8590A1D1F86A5006D0479 /* reperecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reperecipeUITests.swift; sourceTree = "<group>"; };
 		49D8590C1D1F86A5006D0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49D859181D2011C7006D0479 /* RepeRecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeRecipeCell.swift; sourceTree = "<group>"; };
 		4D735AB123BF3F845D2C6C6C /* Pods-reperecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeUITests/Pods-reperecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0218F264224FEE0A62D9CD4 /* Pods_reperecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reperecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBD38078700355A42360A1E /* Pods-reperecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeUITests/Pods-reperecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,9 +116,11 @@
 		4989A5741D28F65B0079BE50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4989A56B1D27B3340079BE50 /* TableViewController.swift */,
-				4989A56C1D27B3340079BE50 /* TableViewController.xib */,
-				4989A5751D28F69B0079BE50 /* ReperecipeViewController.swift */,
+				4989A5771D2AA1AE0079BE50 /* MyRecipePagingViewController.swift */,
+				4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */,
+				4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */,
+				4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */,
+				4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -150,10 +156,10 @@
 				49D858EC1D1F86A5006D0479 /* ViewController.swift */,
 				4989A56F1D27F7990079BE50 /* Recipe.swift */,
 				49D858EE1D1F86A5006D0479 /* Main.storyboard */,
-				49D859181D2011C7006D0479 /* RepeRecipeCell.swift */,
 				49D858F11D1F86A5006D0479 /* Assets.xcassets */,
 				49D858F31D1F86A5006D0479 /* LaunchScreen.storyboard */,
 				49D858F61D1F86A5006D0479 /* Info.plist */,
+				495101A41D2CB4CB002BDC12 /* RecipeCell.swift */,
 			);
 			path = reperecipe;
 			sourceTree = "<group>";
@@ -314,7 +320,7 @@
 				49D858F51D1F86A5006D0479 /* LaunchScreen.storyboard in Resources */,
 				49D858F21D1F86A5006D0479 /* Assets.xcassets in Resources */,
 				49D858F01D1F86A5006D0479 /* Main.storyboard in Resources */,
-				4989A56E1D27B3340079BE50 /* TableViewController.xib in Resources */,
+				4989A5801D2BA6ED0079BE50 /* PagingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,12 +469,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D858ED1D1F86A5006D0479 /* ViewController.swift in Sources */,
+				4989A57C1D2AA4990079BE50 /* IngredientsPagingViewController.swift in Sources */,
 				49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */,
-				4989A5761D28F69B0079BE50 /* ReperecipeViewController.swift in Sources */,
-				49D859191D2011C7006D0479 /* RepeRecipeCell.swift in Sources */,
-				4989A56D1D27B3340079BE50 /* TableViewController.swift in Sources */,
+				495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */,
+				4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */,
 				4989A5701D27F7990079BE50 /* Recipe.swift in Sources */,
 				4989A5721D28F5580079BE50 /* ReperecipeColor.swift in Sources */,
+				4989A5781D2AA1AE0079BE50 /* MyRecipePagingViewController.swift in Sources */,
+				4989A57A1D2AA3EC0079BE50 /* MenuPagingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
