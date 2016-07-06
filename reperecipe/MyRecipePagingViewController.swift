@@ -9,8 +9,9 @@
 import UIKit
 
 class MyRecipePagingViewController: UIViewController {
- 
+    
     @IBOutlet var tableView: UITableView!
+    
     class func instantiateFromStoryboard() -> MyRecipePagingViewController {
         let storyboard = UIStoryboard(name: "PagingViewController", bundle: nil)
         return storyboard.instantiateViewControllerWithIdentifier(String(self)) as! MyRecipePagingViewController
@@ -32,7 +33,8 @@ extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
         
-        return
+        cell.titleLabel.text = "カレーライス"
+        return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

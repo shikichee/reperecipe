@@ -26,9 +26,6 @@ struct MenuOptions: MenuViewCustomizable {
     var displayMode: MenuDisplayMode {
         return .Infinite(widthMode: .Fixed(width: 80), scrollingMode: .ScrollEnabled)
     }
-//    var lazyLoadingPage: LazyLoadingPage {
-//        return .Three
-//    }
     
     struct MenuItemMyRecipe: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {

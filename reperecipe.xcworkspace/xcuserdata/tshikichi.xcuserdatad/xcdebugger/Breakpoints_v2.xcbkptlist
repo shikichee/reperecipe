@@ -104,13 +104,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reperecipe/MyRecipePagingViewController.swift"
-            timestampString = "489468036.148601"
+            timestampString = "489477967.281139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "MyRecipePagingViewController"
-            landmarkType = "3">
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
