@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--リピレシピ-->
         <scene sceneID="bOI-JB-70w">
             <objects>
-                <viewController id="hji-h7-4h3" customClass="ViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="リピレシピ" id="hji-h7-4h3" customClass="ViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iEc-MH-Trp"/>
                         <viewControllerLayoutGuide type="bottom" id="Qc6-lE-ez5"/>

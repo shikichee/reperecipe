@@ -26,7 +26,14 @@ struct MenuOptions: MenuViewCustomizable {
         return [MenuItemMyRecipe(), MenuItemMenu(), MenuItemIngredients(),MenuItemShopping()]
     }
     var displayMode: MenuDisplayMode {
-        return .Infinite(widthMode: .Fixed(width: 80), scrollingMode: .ScrollEnabled)
+        return .Infinite(widthMode: .Fixed(width: 125), scrollingMode: .ScrollEnabled)
+    }
+    
+    var height: CGFloat {
+        return 44
+    }
+    var focusMode: MenuFocusMode {
+        return .Underline(height: 4, color: ReperecipeColor.Brand.orange, horizontalPadding: 10, verticalPadding: 0)
     }
     
     struct MenuItemMyRecipe: MenuItemViewCustomizable {
