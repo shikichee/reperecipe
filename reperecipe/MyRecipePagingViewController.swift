@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MyRecipePagingViewController: UIViewController {
+    var recipes = [Recipe]()
     
     @IBOutlet var tableView: UITableView!
     
@@ -19,7 +21,6 @@ class MyRecipePagingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
    }
     
     override func didReceiveMemoryWarning() {
@@ -31,17 +32,18 @@ class MyRecipePagingViewController: UIViewController {
 extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
-//        cell.recipeStackView.layer.borderWidth = 2.0
-//        cell.recipeStackView.layer.borderColor = ReperecipeColor.Brand.orange.CGColor
-//        cell.recipeStackView.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
-//        cell.recipeStackView.layer.shadowOpacity = 0.8
         
-        cell.titleLabel.text = "カレーライス"
+        recipes = MyRecipeManager().getMyRecipe()
+        
+        for recipe in recipes {
+            cell.textLabel?.text = recipe.title
+        }
+        
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return recipes.count
     }
 }
 extension MyRecipePagingViewController: UITableViewDelegate {

@@ -6,6 +6,48 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Add Recipe View Controller-->
+        <scene sceneID="i2M-NF-Fdq">
+            <objects>
+                <viewController id="ZwC-GF-FZd" customClass="AddRecipeViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NC7-xC-t8Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="4fT-nC-ndj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wy5-5M-m3A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVk-n9-COr">
+                                <rect key="frame" x="142" y="617" width="90" height="30"/>
+                                <state key="normal" title="レシピを登録"/>
+                                <connections>
+                                    <action selector="didTabAddRecipe:" destination="ZwC-GF-FZd" eventType="touchUpInside" id="toN-Sv-tlx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="io2-T3-jqR">
+                                <rect key="frame" x="142" y="63" width="189" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="レシピ名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzh-lb-Le2">
+                                <rect key="frame" x="28" y="66" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="titleTextField" destination="io2-T3-jqR" id="WOq-RZ-8oH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8l-i5-jtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2178.5" y="423.5"/>
+        </scene>
         <!--My Recipe Paging View Controller-->
         <scene sceneID="W0c-cr-JQg">
             <objects>
@@ -112,6 +154,9 @@
                                     <constraint firstAttribute="width" constant="60" id="pug-eX-IUc"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ZwC-GF-FZd" kind="showDetail" id="FGI-fd-JfT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGn-EJ-uFb">
                                 <rect key="frame" x="305" y="597" width="60" height="60"/>
@@ -133,6 +178,7 @@
                             <constraint firstItem="o2R-ee-vyF" firstAttribute="top" secondItem="NO1-hZ-3qt" secondAttribute="bottom" id="jHF-Bu-Juo"/>
                             <constraint firstAttribute="trailing" secondItem="oGn-EJ-uFb" secondAttribute="trailing" constant="10" id="r5I-cO-ReF"/>
                             <constraint firstItem="FGg-Dp-EWL" firstAttribute="leading" secondItem="Guh-bF-THu" secondAttribute="leading" constant="10" id="rsR-OG-58z"/>
+                            <constraint firstItem="FGg-Dp-EWL" firstAttribute="top" secondItem="NO1-hZ-3qt" secondAttribute="bottom" constant="-70" id="syI-Kb-SeJ"/>
                             <constraint firstItem="FGg-Dp-EWL" firstAttribute="trailing" secondItem="NO1-hZ-3qt" secondAttribute="trailing" id="vVw-Pt-89q"/>
                             <constraint firstItem="FGg-Dp-EWL" firstAttribute="centerY" secondItem="Guh-bF-THu" secondAttribute="centerY" id="z97-IJ-nQk"/>
                         </constraints>

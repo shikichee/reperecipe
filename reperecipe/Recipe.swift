@@ -6,12 +6,12 @@
 //  Copyright © 2016年 Takuya Shikichi. All rights reserved.
 //
 //
+import Foundation
 import UIKit
 import RealmSwift
 import ObjectMapper
 
 class Recipe: Object {
-//    dynamic var title = ""
-//    dynamic var image: UIIMage? = nil
-//    dynamic var
+    dynamic var title = ""
+//    dynamic var createdDate = NSDate(timeIntervalSince1970: 0)
 }

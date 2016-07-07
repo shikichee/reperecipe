@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		22B57D9CCB777BB234FC78E3 /* Pods_reperecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAB004A68D8428D639AFB90 /* Pods_reperecipeUITests.framework */; };
 		487C8BAE1F3E735BD080A23D /* Pods_reperecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18EF0EE96F0D2DBC819316 /* Pods_reperecipeTests.framework */; };
+		490792431D2E213900C15B3E /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792421D2E213900C15B3E /* AddRecipeViewController.swift */; };
+		4907924C1D2E83D800C15B3E /* MyRecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907924B1D2E83D800C15B3E /* MyRecipeManager.swift */; };
 		495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A41D2CB4CB002BDC12 /* RecipeCell.swift */; };
 		495101A71D2CE12A002BDC12 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A61D2CE12A002BDC12 /* IngredientCell.swift */; };
 		495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */; };
@@ -50,6 +52,8 @@
 		01E73142310325E034143088 /* Pods-reperecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipe/Pods-reperecipe.debug.xcconfig"; sourceTree = "<group>"; };
 		2A92A3A5FDEAFF8571F035E7 /* Pods-reperecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeTests/Pods-reperecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30D5026BA3169A798508A9B3 /* Pods-reperecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipe/Pods-reperecipe.release.xcconfig"; sourceTree = "<group>"; };
+		490792421D2E213900C15B3E /* AddRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		4907924B1D2E83D800C15B3E /* MyRecipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipeManager.swift; sourceTree = "<group>"; };
 		495101A41D2CB4CB002BDC12 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		495101A61D2CE12A002BDC12 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPagingViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490792441D2E45A000C15B3E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4989A56F1D27F7990079BE50 /* Recipe.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		490792491D2E4ADA00C15B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4907924A1D2E83B200C15B3E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4907924B1D2E83D800C15B3E /* MyRecipeManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		4989A5731D28F5660079BE50 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,12 +147,15 @@
 		4989A5741D28F65B0079BE50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				495101A41D2CB4CB002BDC12 /* RecipeCell.swift */,
+				495101A61D2CE12A002BDC12 /* IngredientCell.swift */,
 				4989A5771D2AA1AE0079BE50 /* MyRecipePagingViewController.swift */,
 				495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */,
 				4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */,
 				4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */,
 				4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */,
 				4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */,
+				490792421D2E213900C15B3E /* AddRecipeViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -155,17 +185,17 @@
 		49D858E91D1F86A5006D0479 /* reperecipe */ = {
 			isa = PBXGroup;
 			children = (
+				4907924A1D2E83B200C15B3E /* Manager */,
+				490792491D2E4ADA00C15B3E /* Model */,
+				490792441D2E45A000C15B3E /* Entities */,
 				4989A5731D28F5660079BE50 /* Enums */,
 				4989A5741D28F65B0079BE50 /* Controller */,
 				49D858EA1D1F86A5006D0479 /* AppDelegate.swift */,
 				49D858EC1D1F86A5006D0479 /* ViewController.swift */,
-				4989A56F1D27F7990079BE50 /* Recipe.swift */,
 				49D858EE1D1F86A5006D0479 /* Main.storyboard */,
 				49D858F11D1F86A5006D0479 /* Assets.xcassets */,
 				49D858F31D1F86A5006D0479 /* LaunchScreen.storyboard */,
 				49D858F61D1F86A5006D0479 /* Info.plist */,
-				495101A41D2CB4CB002BDC12 /* RecipeCell.swift */,
-				495101A61D2CE12A002BDC12 /* IngredientCell.swift */,
 			);
 			path = reperecipe;
 			sourceTree = "<group>";
@@ -474,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490792431D2E213900C15B3E /* AddRecipeViewController.swift in Sources */,
 				49D858ED1D1F86A5006D0479 /* ViewController.swift in Sources */,
 				4989A57C1D2AA4990079BE50 /* IngredientsPagingViewController.swift in Sources */,
 				49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */,
@@ -484,6 +515,7 @@
 				495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */,
 				4989A5721D28F5580079BE50 /* ReperecipeColor.swift in Sources */,
 				4989A5781D2AA1AE0079BE50 /* MyRecipePagingViewController.swift in Sources */,
+				4907924C1D2E83D800C15B3E /* MyRecipeManager.swift in Sources */,
 				4989A57A1D2AA3EC0079BE50 /* MenuPagingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
