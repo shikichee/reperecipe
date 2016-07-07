@@ -16,7 +16,7 @@
 - 作るレシピを元に、買い物リストを作成できる。
 
 ## モック
-[7/5時点での白黒モック](http://adobe.ly/29lFh5x)
+[7/7時点での白黒モック](http://adobe.ly/29pxXGl)
 
 ## 遷移図
 ![画面遷移図](https://github.com/shikichee/reperecipe/blob/images/images/screenTransitionDiagram.jpg)
