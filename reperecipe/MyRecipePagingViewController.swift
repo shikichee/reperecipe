@@ -12,7 +12,7 @@ import RealmSwift
 class MyRecipePagingViewController: UIViewController {
     var recipes = [Recipe]()
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet var tableView: UITableView?
     
     class func instantiateFromStoryboard() -> MyRecipePagingViewController {
         let storyboard = UIStoryboard(name: "PagingViewController", bundle: nil)
@@ -22,6 +22,11 @@ class MyRecipePagingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
    }
+    
+    override func viewDidAppear(animated: Bool) {
+        recipes = MyRecipeManager().getMyRecipe()
+        self.tableView?.reloadData()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,11 +38,7 @@ extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
         
-        recipes = MyRecipeManager().getMyRecipe()
-        
-        for recipe in recipes {
-            cell.textLabel?.text = recipe.title
-        }
+        cell.textLabel?.text = recipes[indexPath.row].title
         
         return cell
     }

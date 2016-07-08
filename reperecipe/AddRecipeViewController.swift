@@ -19,7 +19,7 @@ class AddRecipeViewController: UIViewController{
     
     @IBAction func didTabAddRecipe(sender: AnyObject) {
         MyRecipeManager.addMyRecipe(titleTextField.text!)
-        self.webView.goBack()
+        self.dismissViewControllerAnimated(true, completion: nil)
 
     }
 }
