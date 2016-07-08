@@ -36,6 +36,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig2-af-lG2">
+                                <rect key="frame" x="331" y="28" width="30" height="30"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="didTapCancel:" destination="ZwC-GF-FZd" eventType="touchUpInside" id="doi-PU-V6K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -46,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8l-i5-jtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2178.5" y="423.5"/>
+            <point key="canvasLocation" x="1790.5" y="1619.5"/>
         </scene>
         <!--My Recipe Paging View Controller-->
         <scene sceneID="W0c-cr-JQg">
@@ -196,7 +203,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxf-50-8oA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2178.5" y="1150.5"/>
+            <point key="canvasLocation" x="1754.5" y="814.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vvI-JX-SAZ">
+            <objects>
+                <viewController id="oh7-Fw-e49" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DRR-c7-7bI"/>
+                        <viewControllerLayoutGuide type="bottom" id="NYb-bO-DeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gpr-Dm-zVy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUH-v1-ilX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150.5" y="599.5"/>
         </scene>
         <!--Menu Paging View Controller-->
         <scene sceneID="2wm-6D-87U">

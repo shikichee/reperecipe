@@ -18,8 +18,11 @@ class AddRecipeViewController: UIViewController{
     }
     
     @IBAction func didTabAddRecipe(sender: AnyObject) {
-        MyRecipeManager.addMyRecipe(titleTextField.text!)
+        MyRecipeRepository.addMyRecipe(titleTextField.text!)
         self.dismissViewControllerAnimated(true, completion: nil)
-
+    }
+    
+    @IBAction func didTapCancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

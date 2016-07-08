@@ -1,5 +1,5 @@
 //
-//  MyRecipeManager.swift
+//  MyRecipeRepository.swift
 //  reperecipe
 //
 //  Created by Takuya Shikichi on 2016/07/07.
@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class MyRecipeManager {
+class MyRecipeRepository {
     
     func getMyRecipe() ->  [Recipe] {
         let realm = try! Realm()

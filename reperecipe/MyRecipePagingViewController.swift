@@ -24,7 +24,7 @@ class MyRecipePagingViewController: UIViewController {
    }
     
     override func viewDidAppear(animated: Bool) {
-        recipes = MyRecipeManager().getMyRecipe()
+        recipes = MyRecipeRepository().getMyRecipe()
         self.tableView?.reloadData()
     }
     
