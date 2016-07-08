@@ -38,7 +38,7 @@ extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
         
-        cell.textLabel?.text = recipes[indexPath.row].title
+        cell.titleLabel?.text = recipes[indexPath.row].title
         
         return cell
     }

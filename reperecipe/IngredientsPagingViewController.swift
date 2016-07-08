@@ -30,7 +30,6 @@ class IngredientsPagingViewController: UIViewController {
 extension IngredientsPagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("IngredientCell") as! IngredientCell
-        cell.nameLabel.text = "にんじん"
         return cell
     }
     
