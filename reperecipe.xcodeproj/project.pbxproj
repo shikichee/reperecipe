@@ -14,6 +14,8 @@
 		4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907924D1D2F9F2E00C15B3E /* IntroductionViewController.swift */; };
 		490792501D2FA0C300C15B3E /* IntroductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907924F1D2FA0C300C15B3E /* IntroductionCell.swift */; };
 		490792911D309C5900C15B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4907928F1D309C5900C15B3E /* Main.storyboard */; };
+		490792931D30EA1F00C15B3E /* RefrigeratorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792921D30EA1F00C15B3E /* RefrigeratorRepository.swift */; };
+		490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792941D30EA9B00C15B3E /* Ingredient.swift */; };
 		495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A41D2CB4CB002BDC12 /* RecipeCell.swift */; };
 		495101A71D2CE12A002BDC12 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A61D2CE12A002BDC12 /* IngredientCell.swift */; };
 		495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */; };
@@ -21,7 +23,7 @@
 		4989A5721D28F5580079BE50 /* ReperecipeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5711D28F5580079BE50 /* ReperecipeColor.swift */; };
 		4989A5781D2AA1AE0079BE50 /* MyRecipePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5771D2AA1AE0079BE50 /* MyRecipePagingViewController.swift */; };
 		4989A57A1D2AA3EC0079BE50 /* MenuPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */; };
-		4989A57C1D2AA4990079BE50 /* IngredientsPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */; };
+		4989A57C1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A57B1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift */; };
 		4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */; };
 		4989A5801D2BA6ED0079BE50 /* PagingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */; };
 		49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858EA1D1F86A5006D0479 /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		4907924D1D2F9F2E00C15B3E /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		4907924F1D2FA0C300C15B3E /* IntroductionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionCell.swift; sourceTree = "<group>"; };
 		490792901D309C5900C15B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		490792921D30EA1F00C15B3E /* RefrigeratorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefrigeratorRepository.swift; sourceTree = "<group>"; };
+		490792941D30EA9B00C15B3E /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		495101A41D2CB4CB002BDC12 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		495101A61D2CE12A002BDC12 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPagingViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +70,7 @@
 		4989A5711D28F5580079BE50 /* ReperecipeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReperecipeColor.swift; sourceTree = "<group>"; };
 		4989A5771D2AA1AE0079BE50 /* MyRecipePagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipePagingViewController.swift; sourceTree = "<group>"; };
 		4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPagingViewController.swift; sourceTree = "<group>"; };
-		4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsPagingViewController.swift; sourceTree = "<group>"; };
+		4989A57B1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefrigeratorPagingViewController.swift; sourceTree = "<group>"; };
 		4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuControllerOptions.swift; sourceTree = "<group>"; };
 		4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PagingViewController.storyboard; sourceTree = "<group>"; };
 		49D858E71D1F86A5006D0479 /* reperecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reperecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				4989A56F1D27F7990079BE50 /* Recipe.swift */,
+				490792941D30EA9B00C15B3E /* Ingredient.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				4907924B1D2E83D800C15B3E /* MyRecipeRepository.swift */,
+				490792921D30EA1F00C15B3E /* RefrigeratorRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -157,7 +163,7 @@
 				4907924F1D2FA0C300C15B3E /* IntroductionCell.swift */,
 				495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */,
 				4989A5791D2AA3EC0079BE50 /* MenuPagingViewController.swift */,
-				4989A57B1D2AA4990079BE50 /* IngredientsPagingViewController.swift */,
+				4989A57B1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift */,
 				4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */,
 				4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */,
 				490792421D2E213900C15B3E /* AddRecipeViewController.swift */,
@@ -512,9 +518,11 @@
 			files = (
 				490792431D2E213900C15B3E /* AddRecipeViewController.swift in Sources */,
 				49D858ED1D1F86A5006D0479 /* ViewController.swift in Sources */,
-				4989A57C1D2AA4990079BE50 /* IngredientsPagingViewController.swift in Sources */,
+				490792931D30EA1F00C15B3E /* RefrigeratorRepository.swift in Sources */,
+				4989A57C1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift in Sources */,
 				49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */,
 				495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */,
+				490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */,
 				4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */,
 				4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */,
 				4989A5701D27F7990079BE50 /* Recipe.swift in Sources */,

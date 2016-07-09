@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="2612.5" y="1152.5"/>
         </scene>
-        <!--Ingredients Paging View Controller-->
+        <!--Refrigerator Paging View Controller-->
         <scene sceneID="Ab1-XL-MGL">
             <objects>
-                <viewController storyboardIdentifier="IngredientsPagingViewController" id="M5L-Ku-Qd9" customClass="IngredientsPagingViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RefrigeratorPagingViewController" id="M5L-Ku-Qd9" customClass="RefrigeratorPagingViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2aj-8i-45n"/>
                         <viewControllerLayoutGuide type="bottom" id="B4P-X1-0e0"/>
@@ -256,7 +256,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o34-Cl-pM1" id="sOk-Pd-oqz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

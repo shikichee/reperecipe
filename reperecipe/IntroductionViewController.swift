@@ -9,7 +9,7 @@
 import UIKit
 
 class IntroductionViewController: UIViewController {
-     let navigationLabels = ["レシピをみる", "冷蔵庫ををみる", "買い物に行く", "献立を決める"]
+     let navigationLabels = ["冷蔵庫を確認", "レシピを探す",  "買い物に行く", "献立を決める"]
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

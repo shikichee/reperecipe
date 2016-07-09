@@ -1,5 +1,5 @@
 //
-//  FoodIngredientsPagingViewController.swift
+//  refrigeratorPagingViewController.swift
 //  reperecipe
 //
 //  Created by Takuya Shikichi on 2016/07/04.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class IngredientsPagingViewController: UIViewController {
+class RefrigeratorPagingViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-    class func instantiateFromStoryboard() -> IngredientsPagingViewController {
+    class func instantiateFromStoryboard() -> RefrigeratorPagingViewController {
         let storyboard = UIStoryboard(name: "PagingViewController", bundle: nil)
-        return storyboard.instantiateViewControllerWithIdentifier(String(self)) as! IngredientsPagingViewController
+        return storyboard.instantiateViewControllerWithIdentifier(String(self)) as! RefrigeratorPagingViewController
     }
     
     override func viewDidLoad() {
@@ -27,7 +26,7 @@ class IngredientsPagingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-extension IngredientsPagingViewController: UITableViewDataSource {
+extension RefrigeratorPagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("IngredientCell") as! IngredientCell
         return cell
@@ -37,7 +36,7 @@ extension IngredientsPagingViewController: UITableViewDataSource {
         return 3
     }
 }
-extension IngredientsPagingViewController: UITableViewDelegate {
+extension RefrigeratorPagingViewController: UITableViewDelegate {
     
 }
 
