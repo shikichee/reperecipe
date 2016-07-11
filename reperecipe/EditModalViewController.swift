@@ -13,8 +13,11 @@ class EditModalViewController: UIViewController {
     
     @IBOutlet weak var secondButton: UIButton!
     
-    var firstButtonText:String?
-    var secondButtonText:String?
+    var firstButtonText: String?
+    var secondButtonText: String?
+    
+    var firstViewController: ViewController!
+    var secondViewController: ViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +28,27 @@ class EditModalViewController: UIViewController {
         
         firstButton.setTitle(firstButtonText, forState: .Normal)
         secondButton.setTitle(secondButtonText, forState: .Normal)
+        
+        firstButton.addTarget(self, action: #selector(didTapFirstButton), forControlEvents: .TouchUpInside)
+        firstButton.addTarget(self, action: #selector(didTapSecondButton), forControlEvents: .TouchUpInside)
     }
     
     func setButtonTitle(firstButtonText: String, secondButtonText: String) {
         self.firstButtonText = firstButtonText
         self.secondButtonText = secondButtonText
+    }
+    
+    func setButtonTarget(firstViewController: ViewController, secondViewController: ViewController){
+        self.firstViewController = firstViewController
+        self.secondViewController = secondViewController
+    }
+    
+    func didTapFirstButton() {
+        self.presentViewController(firstViewController, animated: true, completion: nil)
+    }
+    
+    func didTapSecondButton() {
+        self.presentViewController(secondViewController, animated: true, completion: nil)
     }
     
     static func instantiate(sourceView: UIView, sourceRect: CGRect? = nil) -> EditModalViewController {
@@ -43,6 +62,7 @@ class EditModalViewController: UIViewController {
             presentationController.sourceView = sourceView
             presentationController.sourceRect = sourceRect ?? sourceView.bounds
             presentationController.delegate = viewController
+            presentationController.backgroundColor = UIColor.whiteColor()
         }
         
         return viewController
