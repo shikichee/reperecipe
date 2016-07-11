@@ -10,20 +10,20 @@ import RealmSwift
 
 class RefrigeratorRepository {
     
-//    func getMyIngredietns() ->  [Recipe] {
-//        let realm = try! Realm()
-//        return Array(realm.objects(Recipe))
-//    }
-//    
-//    static func addMyRecipe(text: String) {
-//        let realm = try! Realm()
-//        try! realm.write {
-//            if let title: String = text {
-//                // Add recipe to Realm
-//                let recipe = Recipe()
-//                recipe.title = title
-//                realm.add(recipe)
-//            }
-//        }
-//    }
+    func getIngredients() ->  [Ingredient] {
+        let realm = try! Realm()
+        return Array(realm.objects(Ingredient))
+    }
+
+    static func addIngredient(text: String) {
+        let realm = try! Realm()
+        try! realm.write {
+            if let title: String = text {
+                // Add recipe to Realm
+                let ingredient = Ingredient()
+                ingredient.name = title
+                realm.add(ingredient)
+            }
+        }
+    }
 }

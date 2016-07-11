@@ -27,7 +27,7 @@ struct MenuOptions: MenuViewCustomizable {
         return [MenuItemRefrigerator(), MenuItemShopping(), MenuItemMyRecipe(), MenuItemMenu()]
     }
     var displayMode: MenuDisplayMode {
-        return .Infinite(widthMode: .Fixed(width: 125), scrollingMode: .ScrollEnabled)
+        return .Infinite(widthMode: .Fixed(width: 125), scrollingMode: .PagingEnabled)
     }
     
     var height: CGFloat {
