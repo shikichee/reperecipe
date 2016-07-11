@@ -17,21 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="340" height="166"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="153-MH-tTP">
-                                <rect key="frame" x="17" y="118" width="305" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="153-MH-tTP">
+                                <rect key="frame" x="15" y="100" width="310" height="40"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7hl-29-06h"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-pz-KEd">
-                                <rect key="frame" x="17" y="63" width="305" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-pz-KEd">
+                                <rect key="frame" x="15" y="40" width="310" height="40"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="o62-PU-kK7"/>
+                                </constraints>
                                 <state key="normal" title="追加・削除"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="eKv-pz-KEd" secondAttribute="trailing" constant="10" id="Esh-LB-BDy"/>
-                            <constraint firstItem="eKv-pz-KEd" firstAttribute="leading" secondItem="b5O-Zf-tUk" secondAttribute="leading" constant="10" id="bHY-yU-zqa"/>
+                            <constraint firstAttribute="trailing" secondItem="eKv-pz-KEd" secondAttribute="trailing" constant="15" id="Esh-LB-BDy"/>
+                            <constraint firstItem="153-MH-tTP" firstAttribute="top" secondItem="eKv-pz-KEd" secondAttribute="bottom" constant="20" id="UzJ-gQ-ehk"/>
+                            <constraint firstItem="eKv-pz-KEd" firstAttribute="top" secondItem="zyB-TF-5cm" secondAttribute="bottom" constant="20" id="WMW-HG-ws3"/>
+                            <constraint firstItem="eKv-pz-KEd" firstAttribute="leading" secondItem="b5O-Zf-tUk" secondAttribute="leading" constant="15" id="bHY-yU-zqa"/>
+                            <constraint firstItem="153-MH-tTP" firstAttribute="leading" secondItem="b5O-Zf-tUk" secondAttribute="leading" constant="15" id="eWa-Rf-Vt5"/>
+                            <constraint firstAttribute="trailing" secondItem="153-MH-tTP" secondAttribute="trailing" constant="15" id="h53-Wa-CYj"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

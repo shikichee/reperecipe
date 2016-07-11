@@ -36,8 +36,7 @@ class EditModalViewController: UIViewController {
         let viewController = UIStoryboard(name: "EditModalViewController", bundle: nil).instantiateViewControllerWithIdentifier("EditModal") as!  EditModalViewController
         viewController.modalPresentationStyle = .Popover
         let size = viewController.view.frame.size
-        viewController.preferredContentSize = CGSize(width: size.width, height: 165)
-//        viewController.preferredContentSize = viewController.view.frame.size
+        viewController.preferredContentSize = CGSize(width: size.width, height: 140)
         
         if let presentationController = viewController.popoverPresentationController {
             presentationController.permittedArrowDirections = .Down
