@@ -8,7 +8,14 @@
 
 import UIKit
 
+private enum ButtonOrder: Int {
+    case First  = 0
+    case Second = 1
+}
+
 class EditModalViewController: UIViewController {
+
+    
     @IBOutlet weak var firstButton: UIButton!
     
     @IBOutlet weak var secondButton: UIButton!
@@ -16,8 +23,8 @@ class EditModalViewController: UIViewController {
     var firstButtonText: String?
     var secondButtonText: String?
     
-    var firstViewController: ViewController!
-    var secondViewController: ViewController!
+    var firstViewController: UIViewController!
+    var secondViewController: UIViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +36,14 @@ class EditModalViewController: UIViewController {
         firstButton.setTitle(firstButtonText, forState: .Normal)
         secondButton.setTitle(secondButtonText, forState: .Normal)
         
-        firstButton.addTarget(self, action: #selector(didTapFirstButton), forControlEvents: .TouchUpInside)
-        firstButton.addTarget(self, action: #selector(didTapSecondButton), forControlEvents: .TouchUpInside)
+        firstButton.tag = ButtonOrder.First.rawValue
+        secondButton.tag = ButtonOrder.Second.rawValue
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        firstButton.addTarget(self, action: #selector(didTapButton(_:)), forControlEvents: .TouchUpInside)
+        secondButton.addTarget(self, action: #selector(didTapButton(_:)), forControlEvents: .TouchUpInside)
     }
     
     func setButtonTitle(firstButtonText: String, secondButtonText: String) {
@@ -38,17 +51,27 @@ class EditModalViewController: UIViewController {
         self.secondButtonText = secondButtonText
     }
     
-    func setButtonTarget(firstViewController: ViewController, secondViewController: ViewController){
+    func setButtonTarget(firstViewController: UIViewController, secondViewController: UIViewController) {
         self.firstViewController = firstViewController
         self.secondViewController = secondViewController
+        
+        self.firstViewController.modalPresentationStyle = .Custom
+        self.firstViewController.transitioningDelegate = self
+        self.secondViewController.modalPresentationStyle = .Custom
+        self.secondViewController.transitioningDelegate = self
+        
     }
     
-    func didTapFirstButton() {
-        self.presentViewController(firstViewController, animated: true, completion: nil)
-    }
-    
-    func didTapSecondButton() {
-        self.presentViewController(secondViewController, animated: true, completion: nil)
+    func didTapButton(sender: UIButton) {
+        switch  sender.tag {
+        case ButtonOrder.First.rawValue:
+            self.presentViewController(firstViewController, animated: true, completion: {
+            })
+        case ButtonOrder.Second.rawValue:
+            self.presentViewController(secondViewController, animated: true, completion: nil)
+        default:
+            break
+        }
     }
     
     static func instantiate(sourceView: UIView, sourceRect: CGRect? = nil) -> EditModalViewController {
@@ -64,8 +87,15 @@ class EditModalViewController: UIViewController {
             presentationController.delegate = viewController
             presentationController.backgroundColor = UIColor.whiteColor()
         }
-        
+                
         return viewController
+    }
+}
+
+extension EditModalViewController: UIViewControllerTransitioningDelegate{
+    
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+        return EditIngredientsPresentationControlelr(presentedViewController: presented, presentingViewController: presenting)
     }
 }
 extension EditModalViewController: UIPopoverPresentationControllerDelegate {

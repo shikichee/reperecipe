@@ -39,7 +39,11 @@ class RefrigeratorPagingViewController: UIViewController {
         let viewController = EditModalViewController.instantiate(sender)
         viewController.setButtonTitle(firstButtonText, secondButtonText: secondButtonText)
         
-        viewController
+        let firstViewController = UIStoryboard(name: "EditIngredientsModalViewController", bundle: nil).instantiateViewControllerWithIdentifier("EditIngredientsModal")
+        
+        let secondViewController = UIStoryboard(name: "EditIngredientsModalViewController", bundle: nil).instantiateViewControllerWithIdentifier("EditIngredientsModal")
+        
+        viewController.setButtonTarget(firstViewController, secondViewController: secondViewController)
         
         presentViewController(viewController, animated: true, completion: nil)
     }

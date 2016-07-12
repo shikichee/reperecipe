@@ -18,6 +18,10 @@
 		490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792941D30EA9B00C15B3E /* Ingredient.swift */; };
 		490792991D336C9E00C15B3E /* EditModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490792981D336C9E00C15B3E /* EditModalViewController.storyboard */; };
 		4907929B1D336FA900C15B3E /* EditModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907929A1D336FA900C15B3E /* EditModalViewController.swift */; };
+		4907929E1D33BDE800C15B3E /* OverlayPresentaitonConttoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907929D1D33BDE800C15B3E /* OverlayPresentaitonConttoller.swift */; };
+		490792A01D33DF0200C15B3E /* EditIngredientsPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907929F1D33DF0200C15B3E /* EditIngredientsPresentationController.swift */; };
+		490792A21D34929300C15B3E /* EditIngredientsModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490792A11D34929300C15B3E /* EditIngredientsModalViewController.storyboard */; };
+		490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792A31D3498CE00C15B3E /* EditIngredientsModalViewController.swift */; };
 		495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A41D2CB4CB002BDC12 /* RecipeCell.swift */; };
 		495101A71D2CE12A002BDC12 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A61D2CE12A002BDC12 /* IngredientCell.swift */; };
 		495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */; };
@@ -67,6 +71,10 @@
 		490792941D30EA9B00C15B3E /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		490792981D336C9E00C15B3E /* EditModalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditModalViewController.storyboard; sourceTree = "<group>"; };
 		4907929A1D336FA900C15B3E /* EditModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditModalViewController.swift; sourceTree = "<group>"; };
+		4907929D1D33BDE800C15B3E /* OverlayPresentaitonConttoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentaitonConttoller.swift; sourceTree = "<group>"; };
+		4907929F1D33DF0200C15B3E /* EditIngredientsPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIngredientsPresentationController.swift; sourceTree = "<group>"; };
+		490792A11D34929300C15B3E /* EditIngredientsModalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditIngredientsModalViewController.storyboard; sourceTree = "<group>"; };
+		490792A31D3498CE00C15B3E /* EditIngredientsModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIngredientsModalViewController.swift; sourceTree = "<group>"; };
 		495101A41D2CB4CB002BDC12 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		495101A61D2CE12A002BDC12 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPagingViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +158,19 @@
 			name = Repository;
 			sourceTree = "<group>";
 		};
+		4907929C1D33BDA700C15B3E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				490792981D336C9E00C15B3E /* EditModalViewController.storyboard */,
+				4907929A1D336FA900C15B3E /* EditModalViewController.swift */,
+				4907929D1D33BDE800C15B3E /* OverlayPresentaitonConttoller.swift */,
+				4907929F1D33DF0200C15B3E /* EditIngredientsPresentationController.swift */,
+				490792A11D34929300C15B3E /* EditIngredientsModalViewController.storyboard */,
+				490792A31D3498CE00C15B3E /* EditIngredientsModalViewController.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
 		4989A5731D28F5660079BE50 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +193,6 @@
 				4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */,
 				490792421D2E213900C15B3E /* AddRecipeViewController.swift */,
 				4907924D1D2F9F2E00C15B3E /* IntroductionViewController.swift */,
-				490792981D336C9E00C15B3E /* EditModalViewController.storyboard */,
-				4907929A1D336FA900C15B3E /* EditModalViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -207,6 +226,7 @@
 				490792491D2E4ADA00C15B3E /* Model */,
 				490792441D2E45A000C15B3E /* Entities */,
 				4989A5731D28F5660079BE50 /* Enums */,
+				4907929C1D33BDA700C15B3E /* Modal */,
 				4989A5741D28F65B0079BE50 /* Controller */,
 				49D858EA1D1F86A5006D0479 /* AppDelegate.swift */,
 				4907928F1D309C5900C15B3E /* Main.storyboard */,
@@ -375,6 +395,7 @@
 				49D858F21D1F86A5006D0479 /* Assets.xcassets in Resources */,
 				4989A5801D2BA6ED0079BE50 /* PagingViewController.storyboard in Resources */,
 				490792911D309C5900C15B3E /* Main.storyboard in Resources */,
+				490792A21D34929300C15B3E /* EditIngredientsModalViewController.storyboard in Resources */,
 				490792991D336C9E00C15B3E /* EditModalViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,12 +550,15 @@
 				4989A57C1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift in Sources */,
 				49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */,
 				495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */,
+				490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */,
 				490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */,
 				4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */,
 				4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */,
+				490792A01D33DF0200C15B3E /* EditIngredientsPresentationController.swift in Sources */,
 				4989A5701D27F7990079BE50 /* Recipe.swift in Sources */,
 				495101A71D2CE12A002BDC12 /* IngredientCell.swift in Sources */,
 				495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */,
+				4907929E1D33BDE800C15B3E /* OverlayPresentaitonConttoller.swift in Sources */,
 				490792501D2FA0C300C15B3E /* IntroductionCell.swift in Sources */,
 				4989A5721D28F5580079BE50 /* ReperecipeColor.swift in Sources */,
 				4989A5781D2AA1AE0079BE50 /* MyRecipePagingViewController.swift in Sources */,
