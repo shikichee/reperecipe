@@ -10,10 +10,37 @@ import Foundation
 import UIKit
 
 class EditIngredientsModalViewController: UIViewController {
- 
+    
+    @IBOutlet weak var ingredientsNumberLabel: UILabel!
+
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var newIngredientTextField: UITextField!
+    
+    var dataSource: UITableViewDataSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "冷蔵庫の食材を追加・削除"
+        tableView.dataSource = self.dataSource
+        tableView.registerNib(UINib(nibName: "EditIngredientsCell", bundle: nil), forCellReuseIdentifier: "EditIngredientsCell")
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let ingredients = (tableView.dataSource as! EditIngredientsModalDataSource).ingredients
+
+        ingredientsNumberLabel.text = String(ingredients.count)
+        self.tableView.reloadData()
+    }
+    
+    @IBAction func didTapAddIngredientButton(sender: AnyObject) {
+        RefrigeratorRepository.addIngredient(self.newIngredientTextField.text!)
+        self.tableView.reloadData()
+    }
+}
+
+extension EditIngredientsModalViewController: UITableViewDelegate {
+    
 }

@@ -9,7 +9,7 @@
 import RealmSwift
 
 class Ingredient: Object {
-    dynamic var id = 0
+//    dynamic var id = 0
     dynamic var name = ""
-    dynamic var categoryName = ""
+//    dynamic var categoryName = ""
 }

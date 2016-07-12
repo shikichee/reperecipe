@@ -30,7 +30,7 @@ class EditIngredientsPresentationControlelr: OverlayPresentationController {
             }, completion: nil)
     }
     override func sizeForChildContentContainer(container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
-        return CGSize(width: parentSize.width, height: parentSize.height * 0.5)
+        return CGSize(width: parentSize.width, height: parentSize.height * 0.8)
     }
     
     override func frameOfPresentedViewInContainerView() -> CGRect {
