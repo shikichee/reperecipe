@@ -21,7 +21,6 @@ class EditIngredientsModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self.dataSource
-        tableView.delegate = self
         tableView.registerNib(UINib(nibName: "EditIngredientsCell", bundle: nil), forCellReuseIdentifier: "EditIngredientsCell")
     }
     override func viewWillAppear(animated: Bool) {
@@ -30,26 +29,19 @@ class EditIngredientsModalViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        let ingredients = (tableView.dataSource as! EditIngredientsModalDataSource).ingredients
+        var ingredients = (tableView.dataSource as! EditIngredientsModalDataSource).ingredients
+
 
         ingredientsNumberLabel.text = String(ingredients.count)
         self.tableView.reloadData()
     }
     
     @IBAction func didTapAddIngredientButton(sender: AnyObject) {
-        let ingredient = Ingredient()
-        ingredient.name = self.newIngredientTextField.text!
-        (tableView.dataSource as! EditIngredientsModalDataSource).ingredients.append(ingredient)
+        RefrigeratorRepository.addIngredient(self.newIngredientTextField.text!)
         self.tableView.reloadData()
-    }
-    @IBAction func didTapSaveButton(sender: AnyObject) {
-        
     }
 }
 
 extension EditIngredientsModalViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        let ingredients = (tableView.dataSource as! EditIngredientsModalDataSource).ingredients
-        ingredientsNumberLabel.text = String(ingredients.count)
-    }
+    
 }

@@ -1,5 +1,5 @@
 //
-//  EditIngredientsCell.swift
+//  EditFoodsCell.swift
 //  reperecipe
 //
 //  Created by Takuya Shikichi on 2016/07/12.
@@ -9,13 +9,9 @@
 import Foundation
 import UIKit
 
-class EditIngredientsCell: UITableViewCell {
+class EditFoodsCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
- 
-    var deleteAction: () -> () = {
-    }
     
-    @IBAction func didTapDeleteButton() {
-        self.deleteAction()
+    @IBAction func didTapDelete(sender: AnyObject) {
     }
 }

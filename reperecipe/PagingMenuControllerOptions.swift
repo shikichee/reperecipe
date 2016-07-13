@@ -18,13 +18,13 @@ private var pagingControllers: [UIViewController] {
 }
 
 struct MenuItemRefrigerator: MenuItemViewCustomizable {}
-struct MenuItemShopping: MenuItemViewCustomizable {}
 struct MenuItemMyRecipe: MenuItemViewCustomizable {}
+struct MenuItemShopping: MenuItemViewCustomizable {}
 struct MenuItemMenu: MenuItemViewCustomizable {}
 
 struct MenuOptions: MenuViewCustomizable {
     var itemsOptions: [MenuItemViewCustomizable] {
-        return [MenuItemRefrigerator(), MenuItemShopping(), MenuItemMyRecipe(), MenuItemMenu()]
+        return [MenuItemRefrigerator(), MenuItemMyRecipe(), MenuItemShopping(), MenuItemMenu()]
     }
     var displayMode: MenuDisplayMode {
         return .Infinite(widthMode: .Fixed(width: 125), scrollingMode: .PagingEnabled)
