@@ -95,6 +95,7 @@ class EditModalViewController: UIViewController {
 extension EditModalViewController: UIViewControllerTransitioningDelegate{
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+        dismissViewControllerAnimated(true, completion: nil)
         return EditIngredientsPresentationControlelr(presentedViewController: presented, presentingViewController: presenting)
     }
 }

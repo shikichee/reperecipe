@@ -22,11 +22,6 @@ class EditIngredientsModalDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("EditIngredientsCell") as! EditIngredientsCell
         cell.nameLabel?.text = ingredients[indexPath.row].name
         cell.deleteAction =  {
-            if self.ingredients.isEmpty {
-                return
-            }
-            print(indexPath.row)
-            print(self.ingredients)
             self.ingredients.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             tableView.reloadData()

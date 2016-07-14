@@ -9,7 +9,10 @@
 import RealmSwift
 
 class Ingredient: Object {
-//    dynamic var id = 0
+    dynamic var id = NSUUID().UUIDString
     dynamic var name = ""
-//    dynamic var categoryName = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

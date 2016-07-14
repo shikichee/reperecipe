@@ -12,6 +12,18 @@ import RealmSwift
 import ObjectMapper
 
 class Recipe: Object {
+    dynamic var id = NSUUID().UUIDString
     dynamic var title = ""
-//    dynamic var createdDate = NSDate(timeIntervalSince1970: 0)
+    let ingredients = List<IngredientsOfRecipe>()
+    dynamic var memo = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}
+
+class IngredientsOfRecipe: Object {
+    dynamic var id = ""
+    dynamic var name = ""
+    dynamic var quantityText = ""
 }

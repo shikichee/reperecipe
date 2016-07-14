@@ -40,10 +40,20 @@ class EditIngredientsModalViewController: UIViewController {
         let ingredient = Ingredient()
         ingredient.name = self.newIngredientTextField.text!
         (tableView.dataSource as! EditIngredientsModalDataSource).ingredients.append(ingredient)
+        newIngredientTextField.text = ""
         self.tableView.reloadData()
     }
     @IBAction func didTapSaveButton(sender: AnyObject) {
+        let currentIngredients = RefrigeratorRepository().getIngredients()
+        let editedIngreidents = (tableView.dataSource as! EditIngredientsModalDataSource).ingredients
+        let deletedIngredients = RefrigeratorModel.subtractIngredients(currentIngredients, subtractElememt: editedIngreidents)
+        let addedIngredients = RefrigeratorModel.subtractIngredients(editedIngreidents, subtractElememt: currentIngredients)
         
+        //Delete and Add ingredients to Realm
+        RefrigeratorRepository().deleteIngredients(deletedIngredients)
+        RefrigeratorRepository.addIngredients(addedIngredients)
+        
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

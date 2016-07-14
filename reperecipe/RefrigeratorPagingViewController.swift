@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RefrigeratorPagingViewController: UIViewController {
     var ingredients = [Ingredient]()
+    var realmToken: NotificationToken?
     
     @IBOutlet weak var tableView: UITableView!
     //冷蔵庫にある食材の個数
@@ -22,13 +24,22 @@ class RefrigeratorPagingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        let realm = try! Realm()
+        realmToken = realm.objects(Ingredient).addNotificationBlock { (change) in
+            self.ingredients = RefrigeratorRepository().getIngredients()
+            self.numberLabel.text = String(self.ingredients.count)
+            self.tableView.reloadData()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        ingredients = RefrigeratorRepository().getIngredients()
-        numberLabel.text = String(ingredients.count)
-        self.tableView?.reloadData()
+
+    }
+    
+    deinit {
+        realmToken?.stop()
     }
     
     @IBAction func didTapEditButton(sender: UIButton) {

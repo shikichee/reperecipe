@@ -26,4 +26,26 @@ class RefrigeratorRepository {
             }
         }
     }
+    
+    static func addIngredients(ingredients: [Ingredient]) {
+        let realm = try! Realm()
+        try! realm.write {
+            for ingredient in ingredients{
+                if let title: String = ingredient.name {
+                    // Add recipe to Realm
+                    let ingredient = Ingredient()
+                    ingredient.name = title
+                    realm.add(ingredient)
+                }
+            }
+        }
+    }
+    
+    func deleteIngredients(ingredients: [Ingredient]) {
+        let realm = try! Realm()
+        
+        try! realm.write {
+            realm.delete(ingredients)
+        }
+    }
 }
