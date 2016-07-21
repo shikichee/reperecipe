@@ -38,13 +38,29 @@ class MyRecipePagingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func didTapEditButton(sender: UIButton) {
+        let firstButtonText = "レシピを新規作成"
+        let secondButtonText = "献立を決める"
+        
+        let viewController = EditModalViewController.instantiate(sender)
+        viewController.setButtonTitle(firstButtonText, secondButtonText: secondButtonText)
+        
+        let firstViewController = UIStoryboard(name: "AddRecipeModalViewController", bundle: nil).instantiateViewControllerWithIdentifier("AddRecipeModal") as! AddRecipeModalViewController
+        
+        let secondViewController = UIStoryboard(name: "AddRecipeModalViewController", bundle: nil).instantiateViewControllerWithIdentifier("AddRecipeModal") as! AddRecipeModalViewController
+        
+        viewController.setButtonTarget(firstViewController, secondViewController: secondViewController)
+        
+        presentViewController(viewController, animated: true, completion: nil)
+        
+    }
 }
 
 extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
         
-        cell.titleLabel?.text = recipes[indexPath.row].title
+        cell.titleLabel?.text = recipes[indexPath.row].name
         
         return cell
     }

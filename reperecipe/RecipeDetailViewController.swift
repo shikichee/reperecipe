@@ -27,9 +27,7 @@ extension RecipeDetailViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("IngredientOfRecipeCell") as! IngredientOfRecipeCell
         cell.nameLabel.text = ingredients[indexPath.row].name
-        
-        
-        
+     
         return cell
     }
 }
