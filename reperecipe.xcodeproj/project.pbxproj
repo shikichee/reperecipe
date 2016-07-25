@@ -30,6 +30,7 @@
 		495101A71D2CE12A002BDC12 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A61D2CE12A002BDC12 /* IngredientCell.swift */; };
 		495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */; };
 		497F21621D38A6B8004A16DF /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F21611D38A6B8004A16DF /* RecipeViewModel.swift */; };
+		4982D80B1D45D329005E043E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982D80A1D45D329005E043E /* R.generated.swift */; };
 		4986B2A31D37D8EC00ABE3B2 /* AddRecipeModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4986B2A21D37D8EC00ABE3B2 /* AddRecipeModalViewController.storyboard */; };
 		4989A5701D27F7990079BE50 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A56F1D27F7990079BE50 /* Recipe.swift */; };
 		4989A5721D28F5580079BE50 /* ReperecipeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A5711D28F5580079BE50 /* ReperecipeColor.swift */; };
@@ -93,6 +94,7 @@
 		495101A61D2CE12A002BDC12 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPagingViewController.swift; sourceTree = "<group>"; };
 		497F21611D38A6B8004A16DF /* RecipeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		4982D80A1D45D329005E043E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		4986B2A21D37D8EC00ABE3B2 /* AddRecipeModalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddRecipeModalViewController.storyboard; sourceTree = "<group>"; };
 		4989A56F1D27F7990079BE50 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4989A5711D28F5580079BE50 /* ReperecipeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReperecipeColor.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		49D858E91D1F86A5006D0479 /* reperecipe */ = {
 			isa = PBXGroup;
 			children = (
+				4982D80A1D45D329005E043E /* R.generated.swift */,
 				497F21601D38A68B004A16DF /* ViewModel */,
 				4907924A1D2E83B200C15B3E /* Repository */,
 				490792491D2E4ADA00C15B3E /* Model */,
@@ -332,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49D8590F1D1F86A5006D0479 /* Build configuration list for PBXNativeTarget "reperecipe" */;
 			buildPhases = (
+				4982D8091D45D291005E043E /* ShellScript */,
 				8876E94BE4346C66EF567BBA /* [CP] Check Pods Manifest.lock */,
 				49D858E31D1F86A5006D0479 /* Sources */,
 				49D858E41D1F86A5006D0479 /* Frameworks */,
@@ -497,6 +501,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		4982D8091D45D291005E043E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 		55FE185A0ECC85FA0759ACB5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,6 +622,7 @@
 				490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */,
 				490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */,
 				4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */,
+				4982D80B1D45D329005E043E /* R.generated.swift in Sources */,
 				4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */,
 				490792A01D33DF0200C15B3E /* EditIngredientsPresentationController.swift in Sources */,
 				49DCE1E11D378F2A005A3251 /* IngredientOfRecipeCell.swift in Sources */,

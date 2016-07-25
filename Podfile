@@ -10,6 +10,7 @@ target 'reperecipe' do
   pod 'ObjectMapper'
   pod 'PagingMenuController'
   pod 'RealmSwift'
+  pod 'R.swift'
   pod 'Toucan'
   pod 'Moya'
 
