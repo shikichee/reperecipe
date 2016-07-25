@@ -16,6 +16,7 @@ class Recipe: Object {
     
     dynamic var id = NSUUID().UUIDString
     dynamic var name = ""
+    dynamic var categoryId = 0
     let ingredients = List<IngredientsOfRecipe>()
     dynamic var memo = ""
     dynamic private var _image: UIImage? = nil

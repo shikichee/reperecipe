@@ -15,14 +15,7 @@ class MyRecipeRepository {
         return Array(realm.objects(Recipe))
     }
     
-    static func addMyRecipe(name: String, image: UIImage, memo: String) {
-        if let title: String = name {
-                // Add recipe to Realm
-                let recipe = Recipe()
-                recipe.name = title
-                recipe.image = image
-                recipe.memo = memo
-                recipe.save()
-        }
+    static func addMyRecipe(recipe: Recipe) {
+        recipe.save()
     }
 }

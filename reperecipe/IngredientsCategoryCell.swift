@@ -9,6 +9,7 @@
 import UIKit
 
 class IngredientsCategoryCell: UICollectionViewCell {
+    var id: Int = 0
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

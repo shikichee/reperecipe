@@ -161,7 +161,7 @@
                                                             </mask>
                                                         </variation>
                                                     </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="keC-rL-nhO">
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="keC-rL-nhO">
                                                         <rect key="frame" x="0.0" y="434" width="375" height="98"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -195,7 +195,7 @@
                                                             </tableViewCell>
                                                         </prototypes>
                                                     </tableView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqt-MA-VPc">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqt-MA-VPc">
                                                         <rect key="frame" x="0.0" y="532" width="375" height="44"/>
                                                         <subviews>
                                                             <searchBar contentMode="redraw" text="" placeholder="検索して追加する" translatesAutoresizingMaskIntoConstraints="NO" id="BBG-An-j4s">
@@ -215,7 +215,7 @@
                                                             <constraint firstAttribute="height" constant="44" id="l72-Lr-zVb"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="メモ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yma-fm-Dz8">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yma-fm-Dz8">
                                                         <rect key="frame" x="0.0" y="576" width="375" height="44"/>
                                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -262,7 +262,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.90907866379310343" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bqE-QE-7kZ" secondAttribute="trailing" id="2C1-4Q-qnI"/>
                                     <constraint firstAttribute="trailing" secondItem="bqE-QE-7kZ" secondAttribute="trailing" id="4Yg-ya-ssb"/>
@@ -295,6 +295,9 @@
                                         <exclude reference="i25-Ez-7Qa"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="didTapAddRecipe:" destination="RAu-Ak-F2r" eventType="touchUpInside" id="xDK-05-yC9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -323,6 +326,7 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="categoryCollectionView" destination="zGY-VC-mhf" id="A0i-uP-Tsk"/>
+                        <outlet property="memoTextView" destination="2Nw-db-GqA" id="Zhl-xw-kgC"/>
                         <outlet property="previewImageView" destination="xZb-uT-i4o" id="66n-70-ftq"/>
                         <outlet property="titleTextField" destination="VsG-TO-8Gp" id="27H-ey-Nmj"/>
                     </connections>
