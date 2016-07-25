@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Toucan
 
 class AddRecipeModalViewController: UIViewController{
     
@@ -52,7 +53,7 @@ class AddRecipeModalViewController: UIViewController{
     @IBAction func didTapAddRecipe(sender: AnyObject) {
         let recipe = Recipe()
         recipe.name = titleTextField.text!
-        recipe.image = image
+        recipe.image = Toucan(image: image).resize(CGSize(width: 400, height: 400), fitMode: Toucan.Resize.FitMode.Crop).image
         recipe.categoryId = categoryId
         recipe.memo = memoTextView.text!
         

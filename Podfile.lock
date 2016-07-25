@@ -14,6 +14,7 @@ PODS:
   - RealmSwift (1.0.1):
     - Realm (= 1.0.1)
   - Result (2.1.1)
+  - Toucan (0.5.0)
 
 DEPENDENCIES:
   - HxColor
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - ObjectMapper
   - PagingMenuController
   - RealmSwift
+  - Toucan
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
@@ -31,7 +33,8 @@ SPEC CHECKSUMS:
   Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
   RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
   Result: 822c879f145943320cc80a9a8372378e3d699fe4
+  Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
-PODFILE CHECKSUM: 95a59094b36b8914c06dc786c844cc9e529ee34d
+PODFILE CHECKSUM: 3072fd66750487bb2687d34a28ce535fea27ab62
 
 COCOAPODS: 1.0.1

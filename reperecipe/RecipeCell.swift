@@ -12,6 +12,7 @@ class RecipeCell: UITableViewCell {
     @IBOutlet weak var recipeView: UIView!
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var recipeImageView: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()

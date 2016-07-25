@@ -189,7 +189,7 @@
                                                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P3h-D0-s7q" id="zWd-a1-yV8">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </tableViewCellContentView>
                                                             </tableViewCell>
@@ -288,7 +288,7 @@
                                     <constraint firstAttribute="height" constant="42" id="i25-Ez-7Qa"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="買うものを追加・削除"/>
+                                <state key="normal" title="レシピを新規作成"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="YkK-14-SLd"/>
