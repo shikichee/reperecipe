@@ -54,7 +54,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpo-Ni-sVm">
                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="70"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cW7-Iq-XtM">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curry" translatesAutoresizingMaskIntoConstraints="NO" id="cW7-Iq-XtM">
                                                                     <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="WiF-qf-OTd"/>

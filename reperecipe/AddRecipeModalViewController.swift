@@ -12,18 +12,28 @@ import Toucan
 
 class AddRecipeModalViewController: UIViewController{
     
+    @IBOutlet weak var viewHeight: NSLayoutConstraint!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
+    @IBOutlet weak var ingredientTableView: UITableView!
+    @IBOutlet weak var ingredientTableViewHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var notSelectedIngredientView: UIView!
+  
     @IBOutlet weak var memoTextView: UITextView!
+    
+    @IBOutlet weak var ingredientSearchBar: UISearchBar!
     
     var image: UIImage!
     var categoryId: Int = 0
+    var ingredients = [IngredientsOfRecipe]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        ingredientTableView.delegate = self
+        ingredientTableView.dataSource = self
+        ingredientTableView.registerNib(UINib(nibName: "IngredientCellOfRecipe", bundle: nil), forCellReuseIdentifier: "IngredientCellOfRecipe")
     }
     
     @IBAction func didTapAddImage(sender: AnyObject) {
@@ -53,14 +63,37 @@ class AddRecipeModalViewController: UIViewController{
     @IBAction func didTapAddRecipe(sender: AnyObject) {
         let recipe = Recipe()
         recipe.name = titleTextField.text!
-        recipe.image = Toucan(image: image).resize(CGSize(width: 400, height: 400), fitMode: Toucan.Resize.FitMode.Crop).image
+        if let _ = image {
+            recipe.image = Toucan(image: image).resize(CGSize(width: 400, height: 400), fitMode: Toucan.Resize.FitMode.Crop).image
+        }
         recipe.categoryId = categoryId
         recipe.memo = memoTextView.text!
         
         MyRecipeRepository.addMyRecipe(recipe)
+        ingredientTableView.tableHeaderView?.hidden = true
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func didTapAddIngredientButton(sender: AnyObject) {
+        if let ingredient = ingredientSearchBar.text {
+            let ing = IngredientsOfRecipe()
+            ing.name = ingredient
+            let iP = NSIndexPath(forItem: ingredients.count, inSection: 0)
+            ingredients.append(ing)
+            
+            // 初回だけ、材料が登録されていない文言を非表示
+            if ingredients.count == 1 {
+                notSelectedIngredientView.hidden = true
+                viewHeight.constant = viewHeight.constant - 50
+            }
+            
+            ingredientTableViewHeight.constant = CGFloat(80 * ingredients.count)
+            viewHeight.constant = viewHeight.constant + 80
+                
+            ingredientTableView.insertRowsAtIndexPaths([iP], withRowAnimation: UITableViewRowAnimation.Fade)
+            ingredientTableView.reloadData()
+        }
+    }
 }
 
 extension AddRecipeModalViewController: UIImagePickerControllerDelegate {
@@ -112,4 +145,34 @@ extension AddRecipeModalViewController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return RecipeViewModel.categories().count
     }
+}
+
+extension AddRecipeModalViewController: UITableViewDelegate {
+    
+}
+extension AddRecipeModalViewController: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ingredients.count
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = ingredientTableView.dequeueReusableCellWithIdentifier("IngredientCellOfRecipe") as! IngredientCellOfRecipe
+        
+        cell.nameLabel?.text = ingredients[indexPath.row].name
+
+        cell.deleteAction =  {
+            self.ingredients.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            if self.ingredients.isEmpty {
+                self.notSelectedIngredientView.hidden = false
+                self.viewHeight.constant = self.viewHeight.constant + 50
+            }
+            self.ingredientTableViewHeight.constant = self.ingredientTableViewHeight.constant - 80
+            self.viewHeight.constant = self.viewHeight.constant - 80
+            tableView.reloadData()
+        }
+        
+        return cell
+    }
+    
 }

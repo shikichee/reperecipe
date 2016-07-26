@@ -61,7 +61,7 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
         
         cell.titleLabel?.text = recipes[indexPath.row].name
-        cell.imageView?.image = recipes[indexPath.row].image
+        cell.recipeImageView.image = recipes[indexPath.row].image
         
         return cell
     }

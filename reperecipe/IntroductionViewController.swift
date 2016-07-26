@@ -14,6 +14,7 @@ class IntroductionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.scrollEnabled = false
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showMenu" {
