@@ -17,7 +17,7 @@ class Recipe: Object {
     dynamic var id = NSUUID().UUIDString
     dynamic var name = ""
     dynamic var categoryId = 0
-    let ingredients = List<IngredientsOfRecipe>()
+    var ingredients = List<IngredientsOfRecipe>()
     dynamic var memo = ""
     dynamic private var _image: UIImage? = nil
     dynamic var image: UIImage? {
@@ -58,4 +58,9 @@ class IngredientsOfRecipe: Object {
     dynamic var id = ""
     dynamic var name = ""
     dynamic var quantityText = ""
+    dynamic var inRefrigerator = false
+    
+    override static func ignoredProperties() -> [String] {
+        return ["inRefrigerator"]
+    }
 }

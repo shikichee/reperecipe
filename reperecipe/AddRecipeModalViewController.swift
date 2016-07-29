@@ -19,6 +19,7 @@ class AddRecipeModalViewController: UIViewController{
     @IBOutlet weak var ingredientTableView: UITableView!
     @IBOutlet weak var ingredientTableViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var ingredientLabel: UILabel!
     @IBOutlet weak var notSelectedIngredientView: UIView!
   
     @IBOutlet weak var memoTextView: UITextView!
@@ -68,6 +69,9 @@ class AddRecipeModalViewController: UIViewController{
         }
         recipe.categoryId = categoryId
         recipe.memo = memoTextView.text!
+        ingredients.forEach{
+            recipe.ingredients.append($0)
+        }
         
         MyRecipeRepository.addMyRecipe(recipe)
         ingredientTableView.tableHeaderView?.hidden = true
