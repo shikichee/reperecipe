@@ -1,0 +1,11 @@
+/*
+ Localizable.strings
+ reperecipe
+ 
+ Created by Takuya Shikichi on 2016/07/27.
+ Copyright © 2016年 Takuya Shikichi. All rights reserved.
+ */
+
+"Recipe.Label.Ingredient" = "材料(%@)";
+
+"Refrigerator.Label.Ingredient" = "冷蔵庫にある材料%@";
