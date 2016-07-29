@@ -10,7 +10,6 @@
 		22B57D9CCB777BB234FC78E3 /* Pods_reperecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAB004A68D8428D639AFB90 /* Pods_reperecipeUITests.framework */; };
 		487C8BAE1F3E735BD080A23D /* Pods_reperecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD18EF0EE96F0D2DBC819316 /* Pods_reperecipeTests.framework */; };
 		49064A0B1D49B8A700EB38B3 /* IngredientCellOfRecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49064A0A1D49B8A700EB38B3 /* IngredientCellOfRecipeDetail.swift */; };
-		49064A0D1D49B95400EB38B3 /* IngredientCellOFRecipeDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49064A0C1D49B95400EB38B3 /* IngredientCellOFRecipeDetail.xib */; };
 		490792431D2E213900C15B3E /* AddRecipeModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792421D2E213900C15B3E /* AddRecipeModalViewController.swift */; };
 		4907924C1D2E83D800C15B3E /* MyRecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907924B1D2E83D800C15B3E /* MyRecipeRepository.swift */; };
 		4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907924D1D2F9F2E00C15B3E /* IntroductionViewController.swift */; };
@@ -79,7 +78,6 @@
 		2A92A3A5FDEAFF8571F035E7 /* Pods-reperecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeTests/Pods-reperecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30D5026BA3169A798508A9B3 /* Pods-reperecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipe/Pods-reperecipe.release.xcconfig"; sourceTree = "<group>"; };
 		49064A0A1D49B8A700EB38B3 /* IngredientCellOfRecipeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCellOfRecipeDetail.swift; sourceTree = "<group>"; };
-		49064A0C1D49B95400EB38B3 /* IngredientCellOFRecipeDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngredientCellOFRecipeDetail.xib; sourceTree = "<group>"; };
 		490792421D2E213900C15B3E /* AddRecipeModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeModalViewController.swift; sourceTree = "<group>"; };
 		4907924B1D2E83D800C15B3E /* MyRecipeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipeRepository.swift; sourceTree = "<group>"; };
 		4907924D1D2F9F2E00C15B3E /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -244,7 +242,6 @@
 				4994CFCC1D37803D0026D32B /* MyRecipe.storyboard */,
 				49DCE1DC1D378335005A3251 /* RecipeDetailViewController.swift */,
 				49064A0A1D49B8A700EB38B3 /* IngredientCellOfRecipeDetail.swift */,
-				49064A0C1D49B95400EB38B3 /* IngredientCellOFRecipeDetail.xib */,
 			);
 			name = Recipe;
 			sourceTree = "<group>";
@@ -481,7 +478,6 @@
 				4989A5801D2BA6ED0079BE50 /* PagingViewController.storyboard in Resources */,
 				490792911D309C5900C15B3E /* Main.storyboard in Resources */,
 				49309C0B1D4B44AA001611F2 /* Localizable.strings in Resources */,
-				49064A0D1D49B95400EB38B3 /* IngredientCellOFRecipeDetail.xib in Resources */,
 				490792A21D34929300C15B3E /* EditIngredientsModalViewController.storyboard in Resources */,
 				4986B2A31D37D8EC00ABE3B2 /* AddRecipeModalViewController.storyboard in Resources */,
 				490792991D336C9E00C15B3E /* EditModalViewController.storyboard in Resources */,
