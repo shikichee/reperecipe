@@ -31,7 +31,7 @@ class RecipeDetailViewController: UIViewController {
         if let image = recipe.image {
             recipeImageView.image = image
         } else {
-            recipeImageView.frame = true
+            recipeImageView.hidden = true
         }
         categoryImageView.image = RecipeViewModel.categories()[recipe.categoryId].image
         nameLabel.text = recipe.name
