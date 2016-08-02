@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Menu Paging View Controller-->
+        <scene sceneID="2wm-6D-87U">
+            <objects>
+                <viewController storyboardIdentifier="MenuPagingViewController" id="YU8-CJ-nek" customClass="MenuPagingViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tD5-o6-e6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="0KL-mq-bgK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6C-AY-pwj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VR-4Q-hyG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="献立を決める" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gea-09-NXD">
+                                        <rect key="frame" x="128" y="26" width="120" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="6HJ-U2-xkn"/>
+                                    <constraint firstItem="gea-09-NXD" firstAttribute="centerY" secondItem="1VR-4Q-hyG" secondAttribute="centerY" id="EnI-Na-c9u"/>
+                                    <constraint firstItem="gea-09-NXD" firstAttribute="centerX" secondItem="1VR-4Q-hyG" secondAttribute="centerX" id="iYB-s7-zCg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUJ-RN-mMm">
+                                <rect key="frame" x="0.0" y="95" width="375" height="70"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dV1-nd-OGj">
+                                        <rect key="frame" x="30" y="20.5" width="315" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="pa8-cQ-Z3E"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="これから作る献立"/>
+                                            <segment title="作った献立"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dV1-nd-OGj" secondAttribute="trailing" constant="30" id="8vD-eq-fI2"/>
+                                    <constraint firstAttribute="height" constant="70" id="OAf-1r-fJi"/>
+                                    <constraint firstItem="dV1-nd-OGj" firstAttribute="leading" secondItem="hUJ-RN-mMm" secondAttribute="leading" constant="30" id="czj-to-ZMs"/>
+                                    <constraint firstItem="dV1-nd-OGj" firstAttribute="centerY" secondItem="hUJ-RN-mMm" secondAttribute="centerY" id="sr2-Xz-rCX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1VR-4Q-hyG" secondAttribute="trailing" id="6d7-Cs-CcI"/>
+                            <constraint firstItem="1VR-4Q-hyG" firstAttribute="leading" secondItem="s6C-AY-pwj" secondAttribute="leading" id="7S1-o0-ORe"/>
+                            <constraint firstAttribute="trailing" secondItem="hUJ-RN-mMm" secondAttribute="trailing" id="Kx5-Wb-cFY"/>
+                            <constraint firstItem="1VR-4Q-hyG" firstAttribute="top" secondItem="tD5-o6-e6x" secondAttribute="bottom" id="Ml0-Qf-fZq"/>
+                            <constraint firstItem="hUJ-RN-mMm" firstAttribute="leading" secondItem="s6C-AY-pwj" secondAttribute="leading" id="iKp-sV-bFE"/>
+                            <constraint firstItem="hUJ-RN-mMm" firstAttribute="top" secondItem="1VR-4Q-hyG" secondAttribute="bottom" id="oD5-eg-zNy"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quo-Yc-Rjs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612.5" y="1152.5"/>
+        </scene>
+    </scenes>
+</document>

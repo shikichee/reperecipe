@@ -13,6 +13,8 @@ class RecipeCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var recipeImageView: UIImageView!
+    @IBOutlet weak var refrigeratorNumberLabel: UILabel!
+    @IBOutlet weak var cookedNumberLabel: UILabel!
     
     override func layoutSubviews() {
         super.layoutSubviews()

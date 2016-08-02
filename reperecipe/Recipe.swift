@@ -19,6 +19,8 @@ class Recipe: Object {
     dynamic var categoryId = 0
     var ingredients = List<IngredientsOfRecipe>()
     dynamic var memo = ""
+    dynamic var refrigeratorNumber = 0
+    dynamic var cookedNumber = 0
     dynamic private var _image: UIImage? = nil
     dynamic var image: UIImage? {
         set{
@@ -49,8 +51,11 @@ class Recipe: Object {
 
     func save() {
         try! Recipe.realm.write{
-            Recipe.realm.add(self)
+            Recipe.realm.add(self, update: true)
         }
+    }
+    var refrigeratorNumber: Int {
+        return ingredients.filter { $0.inRefrigerator == true }.count
     }
 }
 

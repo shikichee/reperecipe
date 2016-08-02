@@ -1,4 +1,5 @@
 PODS:
+  - AccordionTableViewController (0.0.1)
   - Alamofire (3.4.1)
   - HxColor (2.0.0)
   - Moya (6.5.0):
@@ -20,6 +21,7 @@ PODS:
   - Toucan (0.5.0)
 
 DEPENDENCIES:
+  - AccordionTableViewController
   - HxColor
   - Moya
   - ObjectMapper
@@ -29,6 +31,7 @@ DEPENDENCIES:
   - Toucan
 
 SPEC CHECKSUMS:
+  AccordionTableViewController: 48b2581d8c49001a55851a3700f0921cfe8a4524
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   HxColor: dbf82e4363eaef1314f683514e8bb2716a00554d
   Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
@@ -41,6 +44,6 @@ SPEC CHECKSUMS:
   Result: 822c879f145943320cc80a9a8372378e3d699fe4
   Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
-PODFILE CHECKSUM: 676a3705a6761e21ab22d8f932cf35758a975c72
+PODFILE CHECKSUM: a745cac4e59196cdb8b88e32ffe723e559d6cda1
 
 COCOAPODS: 1.0.1

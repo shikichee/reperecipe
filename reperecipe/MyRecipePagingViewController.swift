@@ -58,7 +58,7 @@ class MyRecipePagingViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRecipeDetail" {
             let recipeDetailViewController = segue.destinationViewController as! RecipeDetailViewController
-        
+            
             if recipe != nil {
                 recipeDetailViewController.recipe = recipe!
             }
@@ -68,10 +68,13 @@ class MyRecipePagingViewController: UIViewController {
 
 extension MyRecipePagingViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as! RecipeCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.recipeCell.identifier) as! RecipeCell
+        let recipe = recipes[indexPath.row]
         
-        cell.titleLabel?.text = recipes[indexPath.row].name
-        cell.recipeImageView.image = recipes[indexPath.row].image
+        cell.titleLabel?.text = recipe.name
+        cell.recipeImageView.image = recipe.image
+        cell.refrigeratorNumberLabel.text = String(recipe.refrigeratorNumber)
+        cell.cookedNumberLabel.text = String(recipe.cookedNumber)
         
         return cell
     }

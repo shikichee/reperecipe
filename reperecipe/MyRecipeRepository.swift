@@ -18,4 +18,5 @@ class MyRecipeRepository {
     static func addMyRecipe(recipe: Recipe) {
         recipe.save()
     }
+    
 }

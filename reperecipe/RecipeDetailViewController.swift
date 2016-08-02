@@ -70,6 +70,8 @@ extension RecipeDetailViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.ingredientCellOfRecipeDetail.identifier) as! IngredientCellOfRecipeDetail
         let ingredient = recipe.ingredients[indexPath.row]
+//        cell.delegate = self
+    
         cell.nameLabel.text = ingredient.name
         cell.quantityLabel.text = ingredient.quantityText
         if !ingredient.inRefrigerator {

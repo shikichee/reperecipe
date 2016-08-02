@@ -34,7 +34,7 @@ class RecipeViewModel {
     
     /// 冷蔵庫にある材料(数)
     var refrigeratorNumberText: String {
-        return R.string.localizable.refrigeratorLabelIngredient(recipe.ingredients.count.description)
+        return R.string.localizable.refrigeratorLabelIngredient(recipe.refrigeratorNumber.description)
     }
     
     func updateIngredientsInRefrigerator() {
