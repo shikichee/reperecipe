@@ -25,6 +25,8 @@
 		490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490792A31D3498CE00C15B3E /* EditIngredientsModalViewController.swift */; };
 		4923C5571D50EB21000DA747 /* AddMenuModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4923C5561D50EB21000DA747 /* AddMenuModalViewController.storyboard */; };
 		4923C5591D50EB4B000DA747 /* AddMenuModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923C5581D50EB4B000DA747 /* AddMenuModalViewController.swift */; };
+		4923C55B1D51B2B2000DA747 /* ShoppingSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4923C55A1D51B2B2000DA747 /* ShoppingSectionHeader.xib */; };
+		4923C55D1D51B524000DA747 /* ShoppingSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923C55C1D51B524000DA747 /* ShoppingSectionHeader.swift */; };
 		49309C0B1D4B44AA001611F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49309C0A1D4B44AA001611F2 /* Localizable.strings */; };
 		49309C0F1D4B44F5001611F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49309C0E1D4B44F5001611F2 /* R.generated.swift */; };
 		493EB36B1D3E07F400F6C8CD /* IngredientsCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493EB36A1D3E07F400F6C8CD /* IngredientsCategoryCell.swift */; };
@@ -52,6 +54,8 @@
 		4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */; };
 		4989A5801D2BA6ED0079BE50 /* PagingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */; };
 		4994CFCD1D37803D0026D32B /* MyRecipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4994CFCC1D37803D0026D32B /* MyRecipe.storyboard */; };
+		499F92AB1D52362E0057FFED /* ShoppingIngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499F92AA1D52362E0057FFED /* ShoppingIngredientCell.xib */; };
+		499F92AD1D52371C0057FFED /* ShoppingIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F92AC1D52371C0057FFED /* ShoppingIngredientCell.swift */; };
 		49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858EA1D1F86A5006D0479 /* AppDelegate.swift */; };
 		49D858ED1D1F86A5006D0479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858EC1D1F86A5006D0479 /* ViewController.swift */; };
 		49D858F21D1F86A5006D0479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D858F11D1F86A5006D0479 /* Assets.xcassets */; };
@@ -100,6 +104,8 @@
 		490792A31D3498CE00C15B3E /* EditIngredientsModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIngredientsModalViewController.swift; sourceTree = "<group>"; };
 		4923C5561D50EB21000DA747 /* AddMenuModalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddMenuModalViewController.storyboard; sourceTree = "<group>"; };
 		4923C5581D50EB4B000DA747 /* AddMenuModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuModalViewController.swift; sourceTree = "<group>"; };
+		4923C55A1D51B2B2000DA747 /* ShoppingSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingSectionHeader.xib; sourceTree = "<group>"; };
+		4923C55C1D51B524000DA747 /* ShoppingSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingSectionHeader.swift; sourceTree = "<group>"; };
 		49309C0A1D4B44AA001611F2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		49309C0E1D4B44F5001611F2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		493EB36A1D3E07F400F6C8CD /* IngredientsCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsCategoryCell.swift; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 		4989A57D1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuControllerOptions.swift; sourceTree = "<group>"; };
 		4989A57F1D2BA6ED0079BE50 /* PagingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PagingViewController.storyboard; sourceTree = "<group>"; };
 		4994CFCC1D37803D0026D32B /* MyRecipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyRecipe.storyboard; sourceTree = "<group>"; };
+		499F92AA1D52362E0057FFED /* ShoppingIngredientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingIngredientCell.xib; sourceTree = "<group>"; };
+		499F92AC1D52371C0057FFED /* ShoppingIngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingIngredientCell.swift; sourceTree = "<group>"; };
 		49D858E71D1F86A5006D0479 /* reperecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reperecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D858EA1D1F86A5006D0479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D858EC1D1F86A5006D0479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,7 +247,11 @@
 			isa = PBXGroup;
 			children = (
 				495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */,
+				499F92AA1D52362E0057FFED /* ShoppingIngredientCell.xib */,
+				499F92AC1D52371C0057FFED /* ShoppingIngredientCell.swift */,
 				493F5E2D1D50B37100CB9321 /* Shopping.storyboard */,
+				4923C55A1D51B2B2000DA747 /* ShoppingSectionHeader.xib */,
+				4923C55C1D51B524000DA747 /* ShoppingSectionHeader.swift */,
 			);
 			name = Shopping;
 			sourceTree = "<group>";
@@ -517,8 +529,10 @@
 			files = (
 				493F5E2B1D50B33300CB9321 /* Refrigerator.storyboard in Resources */,
 				4994CFCD1D37803D0026D32B /* MyRecipe.storyboard in Resources */,
+				499F92AB1D52362E0057FFED /* ShoppingIngredientCell.xib in Resources */,
 				49422FC51D34C42800849795 /* EditIngredientsCell.xib in Resources */,
 				49D858F51D1F86A5006D0479 /* LaunchScreen.storyboard in Resources */,
+				4923C55B1D51B2B2000DA747 /* ShoppingSectionHeader.xib in Resources */,
 				493F5E291D50B30F00CB9321 /* menu.storyboard in Resources */,
 				4970903D1D45E3E800EFEEA3 /* IngredientCellOfRecipe.xib in Resources */,
 				4923C5571D50EB21000DA747 /* AddMenuModalViewController.storyboard in Resources */,
@@ -701,8 +715,10 @@
 				493EB36B1D3E07F400F6C8CD /* IngredientsCategoryCell.swift in Sources */,
 				495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */,
 				490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */,
+				499F92AD1D52371C0057FFED /* ShoppingIngredientCell.swift in Sources */,
 				4923C5591D50EB4B000DA747 /* AddMenuModalViewController.swift in Sources */,
 				490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */,
+				4923C55D1D51B524000DA747 /* ShoppingSectionHeader.swift in Sources */,
 				4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */,
 				4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */,
 				490792A01D33DF0200C15B3E /* EditIngredientsPresentationController.swift in Sources */,
