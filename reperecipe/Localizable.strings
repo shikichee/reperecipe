@@ -7,5 +7,9 @@
  */
 
 "Recipe.Label.Ingredient" = "材料(%@)";
+"Recipe.Label.DaysFrom" = "%@日前";
 
-"Refrigerator.Label.Ingredient" = "冷蔵庫にある材料%@";
+"Refrigerator.Label.Ingredient" = "冷蔵庫にある材料 %@";
+
+"Shopping.Label.WillIngredient" = "買う食材 %@";
+"Shopping.Label.DoneIngredient" = "買った食材 %@";

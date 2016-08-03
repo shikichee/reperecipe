@@ -73,8 +73,9 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         
         cell.titleLabel?.text = recipe.name
         cell.recipeImageView.image = recipe.image
-        cell.refrigeratorNumberLabel.text = String(recipe.refrigeratorNumber)
-        cell.cookedNumberLabel.text = String(recipe.cookedNumber)
+        cell.refrigeratorNumberLabel.text = recipe.getRefrigeratorNumber().description
+        cell.cookedNumberLabel.text = recipe.cookedNumber.description
+        cell.lastCookedLabel.text = recipe.getDaysFromLastCookedDate().description
         
         return cell
     }

@@ -19,8 +19,8 @@ class Recipe: Object {
     dynamic var categoryId = 0
     var ingredients = List<IngredientsOfRecipe>()
     dynamic var memo = ""
-    dynamic var refrigeratorNumber = 0
     dynamic var cookedNumber = 0
+    dynamic var lastCookedDate =  NSDate(timeIntervalSince1970: 0)
     dynamic private var _image: UIImage? = nil
     dynamic var image: UIImage? {
         set{
@@ -54,8 +54,12 @@ class Recipe: Object {
             Recipe.realm.add(self, update: true)
         }
     }
-    var refrigeratorNumber: Int {
+    func getRefrigeratorNumber() -> Int {
         return ingredients.filter { $0.inRefrigerator == true }.count
+    }
+    
+    func getDaysFromLastCookedDate() -> Int {
+        return  NSCalendar.currentCalendar().components(NSCalendarUnit.Day, fromDate: lastCookedDate, toDate: NSDate(), options: []).day
     }
 }
 

@@ -34,7 +34,12 @@ class RecipeViewModel {
     
     /// 冷蔵庫にある材料(数)
     var refrigeratorNumberText: String {
-        return R.string.localizable.refrigeratorLabelIngredient(recipe.refrigeratorNumber.description)
+        return R.string.localizable.refrigeratorLabelIngredient(recipe.getRefrigeratorNumber().description)
+    }
+    
+    /// 何日前(最後に作った日)
+    var lastCookedNumberText: String {
+        return R.string.localizable.recipeLabelDaysFrom(recipe.getRefrigeratorNumber().description)
     }
     
     func updateIngredientsInRefrigerator() {

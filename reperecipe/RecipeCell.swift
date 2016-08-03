@@ -15,9 +15,10 @@ class RecipeCell: UITableViewCell {
     @IBOutlet weak var recipeImageView: UIImageView!
     @IBOutlet weak var refrigeratorNumberLabel: UILabel!
     @IBOutlet weak var cookedNumberLabel: UILabel!
+    @IBOutlet weak var lastCookedLabel: UILabel!
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func awakeFromNib() {
+        super.awakeFromNib()
         recipeView.layer.borderWidth = 1.0
         recipeView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
         recipeView.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
