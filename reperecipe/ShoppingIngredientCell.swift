@@ -10,5 +10,6 @@ import UIKit
 
 class ShoppingIngredientCell: UITableViewCell {
     
+    @IBOutlet weak var nameLabel: UILabel!
     
 }

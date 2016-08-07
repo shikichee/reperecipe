@@ -36,8 +36,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="tHb-B4-Lcv"/>
                                 <exclude reference="AyQ-ee-Mvc"/>
+                                <exclude reference="tHb-B4-Lcv"/>
                             </mask>
                         </variation>
                     </imageView>
@@ -58,6 +58,9 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="gO8-QS-a2M" id="3Ep-SD-9GQ"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

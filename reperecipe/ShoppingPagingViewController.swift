@@ -9,6 +9,12 @@
 import UIKit
 
 class ShoppingPagingViewController: UIViewController {
+//    private var shoppingItems: [[ShoppingList],[ShoppingList]]
+    var willIngredientsNumber = 0
+    var doneIngredientsNumber = 0
+//    
+//    var sectionHeaders = [R.string.localizable.shoppingLabelWillIngredient(willIngredientsNumber)
+//    ,R.string.localizable.shoppingLabelWillIngredient(willIngredientsNumber)]
     
     @IBOutlet weak var tableView: UITableView!
     class func instantiateFromStoryboard() -> ShoppingPagingViewController {
@@ -19,8 +25,8 @@ class ShoppingPagingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: R.nib.shoppingSectionHeader.name, bundle: nil)
-        tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: "ShoppingSectionHeader")
+//        let nib = UINib(nibName: R.nib.shoppingSectionHeader.name, bundle: nil)
+//        tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: "ShoppingSectionHeader")
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,22 +42,23 @@ extension ShoppingPagingViewController: UITableViewDelegate {
 //        let currSection = fetchedResultsController.sections?[section]
 //        let title = currSection!.name
 //        
-        // Dequeue with the reuse identifier
-        let cell = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("ShoppingSectionHeader")
-//        let header = cell as! ShoppingSectionHeader
-//        header.titleLabel.text = title
         
-        return cell
+        // Dequeue with the reuse identifier
+        let header = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("ShoppingSectionHeader") as! ShoppingSectionHeader
+//        header.nameLabel.text = [section]
+        
+        return header
     }
 }
 
 extension ShoppingPagingViewController: UITableViewDataSource {
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
-        cell.
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.shoppingIngredientCell)! as ShoppingIngredientCell
+//        cell.nameLabel.text = 
         
         return cell
     }

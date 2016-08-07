@@ -9,7 +9,6 @@
 import UIKit
 
 class IntroductionViewController: UIViewController {
-     let navigationLabels = ["冷蔵庫を確認", "レシピを探す",  "買い物に行く", "献立を決める"]
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -31,13 +30,14 @@ class IntroductionViewController: UIViewController {
 
 extension IntroductionViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return navigationLabels.count
+        return IntroductionViewModel.titles().count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("IntroductionCell") as! IntroductionCell
         
-        cell.navigationLabel?.text = navigationLabels[indexPath.row]
+        cell.iconImageView.image = IntroductionViewModel.titles()[indexPath.row].image
+        cell.navigationLabel?.text = IntroductionViewModel.titles()[indexPath.row].title
         return cell
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class IntroductionCell: UITableViewCell {
 
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var navigationLabel: UILabel!
     
 }
