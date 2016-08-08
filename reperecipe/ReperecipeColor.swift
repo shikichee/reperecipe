@@ -67,7 +67,7 @@ internal struct ReperecipeColor {
     /// 背景色
     struct Background {
         /// 背景白
-        static let white   = UIColor(0xffffff)
+        static let white   = UIColor(0xfffcf4)
         
         /// 背景オレンジ
         static let orange = UIColor(0xfff9eb)

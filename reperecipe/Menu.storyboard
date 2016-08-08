@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Menu Paging View Controller-->
+        <scene sceneID="2wm-6D-87U">
+            <objects>
+                <viewController storyboardIdentifier="MenuPagingViewController" id="YU8-CJ-nek" customClass="MenuPagingViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tD5-o6-e6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="0KL-mq-bgK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6C-AY-pwj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VR-4Q-hyG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="献立を決める" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gea-09-NXD">
+                                        <rect key="frame" x="128" y="26" width="120" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="6HJ-U2-xkn"/>
+                                    <constraint firstItem="gea-09-NXD" firstAttribute="centerY" secondItem="1VR-4Q-hyG" secondAttribute="centerY" id="EnI-Na-c9u"/>
+                                    <constraint firstItem="gea-09-NXD" firstAttribute="centerX" secondItem="1VR-4Q-hyG" secondAttribute="centerX" id="iYB-s7-zCg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUJ-RN-mMm">
+                                <rect key="frame" x="0.0" y="95" width="375" height="70"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dV1-nd-OGj">
+                                        <rect key="frame" x="30" y="20" width="315" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="pa8-cQ-Z3E"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="これから作る献立"/>
+                                            <segment title="作った献立"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dV1-nd-OGj" secondAttribute="trailing" constant="30" id="8vD-eq-fI2"/>
+                                    <constraint firstAttribute="height" constant="70" id="OAf-1r-fJi"/>
+                                    <constraint firstItem="dV1-nd-OGj" firstAttribute="leading" secondItem="hUJ-RN-mMm" secondAttribute="leading" constant="30" id="czj-to-ZMs"/>
+                                    <constraint firstItem="dV1-nd-OGj" firstAttribute="centerY" secondItem="hUJ-RN-mMm" secondAttribute="centerY" id="sr2-Xz-rCX"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-fy-I72">
+                                <rect key="frame" x="0.0" y="165" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZeJ-Bc-6HN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZeJ-Bc-6HN" id="LYc-Xs-Ddr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YU8-CJ-nek" id="pW2-kB-X1Z"/>
+                                    <outlet property="delegate" destination="YU8-CJ-nek" id="kEe-zk-soL"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flx-pK-Hp3">
+                                <rect key="frame" x="319" y="627" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapEditButton:" destination="YU8-CJ-nek" eventType="touchUpInside" id="hGv-vc-Xhg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="flx-pK-Hp3" secondAttribute="trailing" constant="10" id="2di-ow-Bri"/>
+                            <constraint firstAttribute="trailing" secondItem="1VR-4Q-hyG" secondAttribute="trailing" id="6d7-Cs-CcI"/>
+                            <constraint firstItem="1VR-4Q-hyG" firstAttribute="leading" secondItem="s6C-AY-pwj" secondAttribute="leading" id="7S1-o0-ORe"/>
+                            <constraint firstAttribute="trailing" secondItem="UAH-fy-I72" secondAttribute="trailing" id="FSL-qm-rnX"/>
+                            <constraint firstAttribute="trailing" secondItem="hUJ-RN-mMm" secondAttribute="trailing" id="Kx5-Wb-cFY"/>
+                            <constraint firstItem="1VR-4Q-hyG" firstAttribute="top" secondItem="tD5-o6-e6x" secondAttribute="bottom" id="Ml0-Qf-fZq"/>
+                            <constraint firstItem="0KL-mq-bgK" firstAttribute="top" secondItem="UAH-fy-I72" secondAttribute="bottom" id="ZkT-94-R0g"/>
+                            <constraint firstItem="UAH-fy-I72" firstAttribute="leading" secondItem="s6C-AY-pwj" secondAttribute="leading" id="dtt-zS-Xd8"/>
+                            <constraint firstItem="hUJ-RN-mMm" firstAttribute="leading" secondItem="s6C-AY-pwj" secondAttribute="leading" id="iKp-sV-bFE"/>
+                            <constraint firstItem="hUJ-RN-mMm" firstAttribute="top" secondItem="1VR-4Q-hyG" secondAttribute="bottom" id="oD5-eg-zNy"/>
+                            <constraint firstItem="UAH-fy-I72" firstAttribute="top" secondItem="hUJ-RN-mMm" secondAttribute="bottom" id="slR-nC-RdO"/>
+                            <constraint firstItem="0KL-mq-bgK" firstAttribute="top" secondItem="flx-pK-Hp3" secondAttribute="bottom" constant="10" id="yuA-rr-cxI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="menuTableView" destination="UAH-fy-I72" id="YeG-W1-lxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quo-Yc-Rjs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612.5" y="1152.5"/>
+        </scene>
+    </scenes>
+</document>

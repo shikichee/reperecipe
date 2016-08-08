@@ -17,11 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zu-Cv-CyC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="418"/>
+                                <connections>
+                                    <segue destination="1LR-mP-W7r" kind="embed" id="HJS-fI-9ou"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eu6-Dm-TPe">
+                                <rect key="frame" x="0.0" y="438" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.98823529481887817" blue="0.95686274766921997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hwB-Up-ope"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Df-Fh-2eg">
-                                <rect key="frame" x="0.0" y="462" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="482" width="375" height="185"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="205" id="7YS-ML-Qgz"/>
+                                    <constraint firstAttribute="height" constant="185" id="7YS-ML-Qgz"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IntroductionCell" rowHeight="44" id="0gU-cp-Txb" customClass="IntroductionCell" customModule="reperecipe" customModuleProvider="target">
@@ -32,7 +45,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2np-NE-yCE">
-                                                    <rect key="frame" x="123.5" y="7" width="128" height="30"/>
+                                                    <rect key="frame" x="123" y="7" width="128" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冷蔵庫を確認" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sd3-OV-sGc">
                                                             <rect key="frame" x="40" y="8" width="84" height="14"/>
@@ -98,7 +111,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZID-G7-MNk" firstAttribute="top" secondItem="7Df-Fh-2eg" secondAttribute="bottom" id="0dv-Q8-o8l"/>
+                            <constraint firstAttribute="trailing" secondItem="1zu-Cv-CyC" secondAttribute="trailing" id="8dP-jH-hAx"/>
+                            <constraint firstItem="Eu6-Dm-TPe" firstAttribute="top" secondItem="1zu-Cv-CyC" secondAttribute="bottom" id="Uy3-C0-feZ"/>
+                            <constraint firstItem="1zu-Cv-CyC" firstAttribute="leading" secondItem="zRo-oz-Bfi" secondAttribute="leading" id="Vde-lN-ijW"/>
                             <constraint firstAttribute="trailing" secondItem="7Df-Fh-2eg" secondAttribute="trailing" id="Wzh-Wo-8BG"/>
+                            <constraint firstItem="7Df-Fh-2eg" firstAttribute="top" secondItem="Eu6-Dm-TPe" secondAttribute="bottom" id="g7k-jV-PMS"/>
+                            <constraint firstAttribute="trailing" secondItem="Eu6-Dm-TPe" secondAttribute="trailing" id="gT4-Bz-wFj"/>
+                            <constraint firstItem="1zu-Cv-CyC" firstAttribute="top" secondItem="MWT-My-Ca8" secondAttribute="bottom" id="oQP-UA-3ar"/>
+                            <constraint firstItem="Eu6-Dm-TPe" firstAttribute="leading" secondItem="zRo-oz-Bfi" secondAttribute="leading" id="uPB-ti-Gqa"/>
                             <constraint firstItem="7Df-Fh-2eg" firstAttribute="leading" secondItem="zRo-oz-Bfi" secondAttribute="leading" id="xB7-8B-YEN"/>
                         </constraints>
                     </view>
@@ -185,6 +205,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EzK-5h-L2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1257" y="237"/>
+        </scene>
+        <!--Introduction Paging View Controller-->
+        <scene sceneID="nWy-Gn-m5L">
+            <objects>
+                <viewController id="1LR-mP-W7r" customClass="IntroductionPagingViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5vA-CY-irs"/>
+                        <viewControllerLayoutGuide type="bottom" id="9eR-59-3Km"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u59-4I-Pp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKa-ut-8uN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046.5" y="1304"/>
+        </scene>
+        <!--Introduction Container View Controller-->
+        <scene sceneID="aWr-18-4Rh">
+            <objects>
+                <viewController storyboardIdentifier="IntroductionContainerViewController" id="NJd-zP-QlK" customClass="IntroductionContainerViewController" customModule="reperecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ro-sA-l8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="b4r-Uv-ADo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8it-X8-jtg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-qi-3b2">
+                                <rect key="frame" x="34" y="60" width="306" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0JN-do-tZU"/>
+                                </constraints>
+                                <string key="text">まずは冷蔵庫の中身をメモしましょう！
+ほげほげほげほ</string>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" red="0.28627452254295349" green="0.19607843458652496" blue="0.039215687662363052" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0JN-do-tZU"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="la3-yg-pQA">
+                                <rect key="frame" x="37" y="170" width="300" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="fHR-Nq-XIo"/>
+                                    <constraint firstAttribute="width" constant="300" id="p6B-EU-JN3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98823529481887817" blue="0.95686274766921997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="la3-yg-pQA" firstAttribute="top" secondItem="0ro-sA-l8b" secondAttribute="bottom" constant="150" id="DhO-5h-QsD"/>
+                            <constraint firstItem="la3-yg-pQA" firstAttribute="centerX" secondItem="8it-X8-jtg" secondAttribute="centerX" id="JwP-vr-wKy"/>
+                            <constraint firstItem="qxd-qi-3b2" firstAttribute="top" secondItem="0ro-sA-l8b" secondAttribute="bottom" constant="40" id="M38-NV-TCl"/>
+                            <constraint firstItem="qxd-qi-3b2" firstAttribute="centerX" secondItem="8it-X8-jtg" secondAttribute="centerX" id="PMX-ue-e9T"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="la3-yg-pQA" id="ZNv-Zx-zSj"/>
+                        <outlet property="titleLabel" destination="qxd-qi-3b2" id="EGn-uC-bkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LtS-Up-ED2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505.5" y="1016.5"/>
         </scene>
     </scenes>
     <resources>
