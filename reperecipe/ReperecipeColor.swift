@@ -19,7 +19,7 @@ internal struct ReperecipeColor {
     
     struct Sub {
         //青
-        static let blue = UIColor(0xD8DEFC)
+        static let blue = UIColor(0xB8DEFC)
         
         //濃い青
         static let blueDark = UIColor(0x5FA8E2)
@@ -27,15 +27,20 @@ internal struct ReperecipeColor {
         //黄色
         static let yellow = UIColor(0xFDDA7B)
         
+        //濃い黄色
+        static let yellowDark = UIColor(0xEBAA26)
+        
         //赤
         static let red = UIColor(0xFFBFB1)
         
         //濃い赤
-        static let redDark = UIColor(0xEF705c)
+        static let redDark = UIColor(0xEA705C)
         
-        //濃い緑
+        //緑
         static let green = UIColor(0xBFE296)
         
+        //濃い緑
+        static let greenDark = UIColor(0x6EB441)
     }
     
     /// 文字色

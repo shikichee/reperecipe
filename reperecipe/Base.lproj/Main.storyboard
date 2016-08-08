@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Df-Fh-2eg">
-                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="462" width="375" height="205"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="7YS-ML-Qgz"/>
+                                    <constraint firstAttribute="height" constant="205" id="7YS-ML-Qgz"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IntroductionCell" rowHeight="44" id="0gU-cp-Txb" customClass="IntroductionCell" customModule="reperecipe" customModuleProvider="target">
@@ -31,8 +31,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2np-NE-yCE">
-                                                    <rect key="frame" x="107" y="7" width="128" height="30"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2np-NE-yCE">
+                                                    <rect key="frame" x="123.5" y="7" width="128" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冷蔵庫を確認" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sd3-OV-sGc">
                                                             <rect key="frame" x="40" y="8" width="84" height="14"/>
@@ -74,7 +74,6 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.72156862745098038" green="0.87058823529411766" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="2np-NE-yCE" firstAttribute="centerY" secondItem="Spz-UX-Q3s" secondAttribute="centerY" id="OxS-ef-5Zb"/>
                                                 <constraint firstAttribute="trailing" secondItem="nil-t9-J07" secondAttribute="trailing" constant="10" id="TYm-1G-mFC"/>
@@ -82,6 +81,7 @@
                                                 <constraint firstItem="2np-NE-yCE" firstAttribute="centerX" secondItem="Spz-UX-Q3s" secondAttribute="centerX" id="lDW-Xv-JAy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.72156862745098038" green="0.87058823529411766" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="iconImageView" destination="b0I-UA-Euw" id="oNB-6Z-fOa"/>
                                             <outlet property="navigationLabel" destination="sd3-OV-sGc" id="kMj-2M-iqb"/>

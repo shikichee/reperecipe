@@ -29,19 +29,37 @@ class IntroductionViewController: UIViewController {
 }
 
 extension IntroductionViewController: UITableViewDataSource {
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return IntroductionViewModel.titles().count
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("IntroductionCell") as! IntroductionCell
         
-        cell.iconImageView.image = IntroductionViewModel.titles()[indexPath.row].image
-        cell.navigationLabel?.text = IntroductionViewModel.titles()[indexPath.row].title
+        cell.iconImageView.image = IntroductionViewModel.titles()[indexPath.section].image
+        cell.navigationLabel?.text = IntroductionViewModel.titles()[indexPath.section].title
+        
+//        タップされた際の色の設定
+        let selectedView = UIView()
+        selectedView.backgroundColor = IntroductionViewModel.titles()[indexPath.section].tappedColor
+        cell.selectedBackgroundView =  selectedView
+        
         return cell
     }
+
 }
 
 extension IntroductionViewController: UITableViewDelegate {
 
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = IntroductionViewModel.titles()[indexPath.section].color
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section != 0 ? CGFloat(3) : 0
+    }
 }
