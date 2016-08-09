@@ -11,6 +11,10 @@ import HxColor
 
 internal struct ReperecipeColor {
     
+    struct Alpha {
+        static let normal = CGFloat(0.3)
+    }
+    
     /// ブランドカラー
     struct Brand {
         /// オレンジ

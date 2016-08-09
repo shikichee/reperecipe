@@ -27,7 +27,7 @@ struct MenuOptions: MenuViewCustomizable {
         return [MenuItemRefrigerator(), MenuItemMyRecipe(), MenuItemShopping(), MenuItemMenu()]
     }
     var displayMode: MenuDisplayMode {
-        return .Infinite(widthMode: .Fixed(width: 125), scrollingMode: .PagingEnabled)
+        return .SegmentedControl
     }
     
     var height: CGFloat {
@@ -38,26 +38,34 @@ struct MenuOptions: MenuViewCustomizable {
     }
     struct MenuItemRefrigerator: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let title = MenuItemText(text: "冷蔵庫")
-            return .Text(title: title)
+            let selectedImage = UIImage(named: "icon_refrigerator_orn")?.resize(CGSize(width: 30, height: 30))
+            
+            let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
+            return .Image(image: image! , selectedImage: selectedImage)
         }
     }
     struct MenuItemMyRecipe: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let title = MenuItemText(text: "レシピ")
-            return .Text(title: title)
+            let selectedImage = UIImage(named: "icon_recipe_orn")?.resize(CGSize(width: 30, height: 30))
+            
+            let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
+            return .Image(image: image! , selectedImage: selectedImage)
         }
     }
     struct MenuItemShopping: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let title = MenuItemText(text: "買い物")
-            return .Text(title: title)
+            let selectedImage = UIImage(named: "icon_shopping_orn")?.resize(CGSize(width: 30, height: 30))
+            
+            let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
+            return .Image(image: image! , selectedImage: selectedImage)
         }
     }
     struct MenuItemMenu: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let title = MenuItemText(text: "献立")
-            return .Text(title: title)
+            let selectedImage = UIImage(named: "icon_mealmenu_orn")?.resize(CGSize(width: 30, height: 30))
+            
+            let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
+            return .Image(image: image! , selectedImage: selectedImage)
         }
     }
 }
