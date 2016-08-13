@@ -11,6 +11,7 @@ import UIKit
 
 class EditIngredientsModalViewController: UIViewController {
     
+    @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var ingredientsNumberLabel: UILabel!
 
     @IBOutlet weak var tableView: UITableView!
@@ -23,6 +24,8 @@ class EditIngredientsModalViewController: UIViewController {
         tableView.dataSource = self.dataSource
         tableView.delegate = self
         tableView.registerNib(UINib(nibName: "EditIngredientsCell", bundle: nil), forCellReuseIdentifier: "EditIngredientsCell")
+        searchView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
+        searchView.layer.borderWidth = CGFloat(1)
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -62,4 +65,8 @@ extension EditIngredientsModalViewController: UITableViewDelegate {
         let ingredients = (tableView.dataSource as! EditIngredientsModalDataSource).ingredients
         ingredientsNumberLabel.text = String(ingredients.count)
     }
+}
+
+extension EditIngredientsModalViewController: UITextFieldDelegate {
+    
 }

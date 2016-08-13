@@ -36,19 +36,19 @@ class ShoppingPagingViewController: UIViewController {
 }
 
 extension ShoppingPagingViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // Here, we use NSFetchedResultsController
-        // And we simply use the section name as title
-//        let currSection = fetchedResultsController.sections?[section]
-//        let title = currSection!.name
+//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        // Here, we use NSFetchedResultsController
+//        // And we simply use the section name as title
+////        let currSection = fetchedResultsController.sections?[section]
+////        let title = currSection!.name
+////        
 //        
-        
-        // Dequeue with the reuse identifier
-        let header = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("ShoppingSectionHeader") as! ShoppingSectionHeader
-//        header.nameLabel.text = [section]
-        
-        return header
-    }
+////        // Dequeue with the reuse identifier
+////        let header = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("ShoppingSectionHeader") as! ShoppingSectionHeader
+////        header.nameLabel.text = [section]
+//        
+//        return header
+//    }
 }
 
 extension ShoppingPagingViewController: UITableViewDataSource {

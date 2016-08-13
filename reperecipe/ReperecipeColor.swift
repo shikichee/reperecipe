@@ -65,7 +65,7 @@ internal struct ReperecipeColor {
     /// 線色
     struct Line {
         /// 通常
-        static let normal = UIColor(0xcccccc)
+        static let normal = UIColor(0xe5cfb3)
     }
     
     /// 背景色

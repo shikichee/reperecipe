@@ -17,27 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="340" height="166"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="153-MH-tTP">
-                                <rect key="frame" x="15" y="100" width="310" height="40"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="153-MH-tTP">
+                                <rect key="frame" x="15" y="101" width="310" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="7hl-29-06h"/>
+                                    <constraint firstAttribute="height" constant="46" id="7hl-29-06h"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="Button" backgroundImage="btn_sub_normal">
+                                    <color key="titleColor" red="1" green="0.72156864404678345" blue="0.44313725829124451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-pz-KEd">
-                                <rect key="frame" x="15" y="40" width="310" height="40"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-pz-KEd">
+                                <rect key="frame" x="15" y="40" width="310" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="o62-PU-kK7"/>
+                                    <constraint firstAttribute="height" constant="46" id="o62-PU-kK7"/>
                                 </constraints>
-                                <state key="normal" title="追加・削除"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="追加・削除" backgroundImage="btn_main_normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="eKv-pz-KEd" secondAttribute="trailing" constant="15" id="Esh-LB-BDy"/>
-                            <constraint firstItem="153-MH-tTP" firstAttribute="top" secondItem="eKv-pz-KEd" secondAttribute="bottom" constant="20" id="UzJ-gQ-ehk"/>
+                            <constraint firstItem="153-MH-tTP" firstAttribute="top" secondItem="eKv-pz-KEd" secondAttribute="bottom" constant="15" id="UzJ-gQ-ehk"/>
                             <constraint firstItem="eKv-pz-KEd" firstAttribute="top" secondItem="zyB-TF-5cm" secondAttribute="bottom" constant="20" id="WMW-HG-ws3"/>
                             <constraint firstItem="eKv-pz-KEd" firstAttribute="leading" secondItem="b5O-Zf-tUk" secondAttribute="leading" constant="15" id="bHY-yU-zqa"/>
                             <constraint firstItem="153-MH-tTP" firstAttribute="leading" secondItem="b5O-Zf-tUk" secondAttribute="leading" constant="15" id="eWa-Rf-Vt5"/>
@@ -56,4 +60,8 @@
             <point key="canvasLocation" x="68" y="269"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_main_normal" width="43" height="46"/>
+        <image name="btn_sub_normal" width="43" height="46"/>
+    </resources>
 </document>

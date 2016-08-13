@@ -36,6 +36,9 @@ class EditModalViewController: UIViewController {
         firstButton.setTitle(firstButtonText, forState: .Normal)
         secondButton.setTitle(secondButtonText, forState: .Normal)
         
+        firstButton.setBackgroundImage(R.image.btn_main_tapped(), forState: .Highlighted)
+        secondButton.setBackgroundImage(R.image.btn_sub_tapped(), forState: .Highlighted)
+        
         firstButton.tag = ButtonOrder.First.rawValue
         secondButton.tag = ButtonOrder.Second.rawValue
 

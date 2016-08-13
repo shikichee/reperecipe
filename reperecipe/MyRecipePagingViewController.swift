@@ -67,6 +67,14 @@ class MyRecipePagingViewController: UIViewController {
 }
 
 extension MyRecipePagingViewController: UITableViewDataSource {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return recipes.count
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.recipeCell.identifier) as! RecipeCell
         let recipe = recipes[indexPath.row]
@@ -75,7 +83,10 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         cell.recipeImageView.image = recipe.image
         cell.refrigeratorNumberLabel.text = recipe.getRefrigeratorNumber().description
         cell.cookedNumberLabel.text = recipe.cookedNumber.description
-        cell.lastCookedLabel.text = recipe.getDaysFromLastCookedDate().description
+//        cell.lastCookedLabel.text = recipe.getDaysFromLastCookedDate().description
+        
+//        cell.layer.borderColor = ReperecipeColor.Line.normal.CGColor
+//        cell.layer.borderWidth = CGFloat(1)
         
         return cell
     }
@@ -85,11 +96,9 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         recipe = recipes[indexPath.row]
         performSegueWithIdentifier("showRecipeDetail",sender: nil)
     }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipes.count
-    }
 }
 extension MyRecipePagingViewController: UITableViewDelegate {
-    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section != 0 ? CGFloat(8) : 0
+    }
 }

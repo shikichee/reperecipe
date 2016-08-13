@@ -69,6 +69,7 @@
 		49D8590B1D1F86A5006D0479 /* reperecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8590A1D1F86A5006D0479 /* reperecipeUITests.swift */; };
 		49DCE1DD1D378335005A3251 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DCE1DC1D378335005A3251 /* RecipeDetailViewController.swift */; };
 		49E879E01D3673B1003639D5 /* RefrigeratorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E879DF1D3673B1003639D5 /* RefrigeratorModel.swift */; };
+		49F3190F1D5B2E4E00E73D0F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3190E1D5B2E4E00E73D0F /* UIView.swift */; };
 		BDA2ED65EE517BEEA67827D7 /* Pods_reperecipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0218F264224FEE0A62D9CD4 /* Pods_reperecipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +160,7 @@
 		49D8590C1D1F86A5006D0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DCE1DC1D378335005A3251 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		49E879DF1D3673B1003639D5 /* RefrigeratorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefrigeratorModel.swift; sourceTree = "<group>"; };
+		49F3190E1D5B2E4E00E73D0F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4D735AB123BF3F845D2C6C6C /* Pods-reperecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeUITests/Pods-reperecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0218F264224FEE0A62D9CD4 /* Pods_reperecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reperecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBD38078700355A42360A1E /* Pods-reperecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeUITests/Pods-reperecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				492F98351D59B6DB00D94571 /* UIImage.swift */,
+				49F3190E1D5B2E4E00E73D0F /* UIView.swift */,
 			);
 			name = Extensioin;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				4989A57C1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift in Sources */,
 				49D858EB1D1F86A5006D0479 /* AppDelegate.swift in Sources */,
 				493EB36B1D3E07F400F6C8CD /* IngredientsCategoryCell.swift in Sources */,
+				49F3190F1D5B2E4E00E73D0F /* UIView.swift in Sources */,
 				495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */,
 				490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */,
 				499F92AD1D52371C0057FFED /* ShoppingIngredientCell.swift in Sources */,

@@ -23,6 +23,7 @@ struct MenuItemShopping: MenuItemViewCustomizable {}
 struct MenuItemMenu: MenuItemViewCustomizable {}
 
 struct MenuOptions: MenuViewCustomizable {
+    
     var itemsOptions: [MenuItemViewCustomizable] {
         return [MenuItemRefrigerator(), MenuItemMyRecipe(), MenuItemShopping(), MenuItemMenu()]
     }
@@ -38,7 +39,7 @@ struct MenuOptions: MenuViewCustomizable {
     }
     struct MenuItemRefrigerator: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let selectedImage = UIImage(named: "icon_refrigerator_orn")?.resize(CGSize(width: 30, height: 30))
+            let selectedImage = UIImage(named: R.image.icon_refrigerator_orn.name )?.resize(CGSize(width: 30, height: 30))
             
             let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
             return .Image(image: image! , selectedImage: selectedImage)
@@ -46,7 +47,7 @@ struct MenuOptions: MenuViewCustomizable {
     }
     struct MenuItemMyRecipe: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let selectedImage = UIImage(named: "icon_recipe_orn")?.resize(CGSize(width: 30, height: 30))
+            let selectedImage = UIImage(named: R.image.icon_recipe_orn.name)?.resize(CGSize(width: 30, height: 30))
             
             let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
             return .Image(image: image! , selectedImage: selectedImage)
@@ -54,7 +55,7 @@ struct MenuOptions: MenuViewCustomizable {
     }
     struct MenuItemShopping: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let selectedImage = UIImage(named: "icon_shopping_orn")?.resize(CGSize(width: 30, height: 30))
+            let selectedImage = UIImage(named: R.image.icon_shopping_orn.name)?.resize(CGSize(width: 30, height: 30))
             
             let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
             return .Image(image: image! , selectedImage: selectedImage)
@@ -62,7 +63,7 @@ struct MenuOptions: MenuViewCustomizable {
     }
     struct MenuItemMenu: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            let selectedImage = UIImage(named: "icon_mealmenu_orn")?.resize(CGSize(width: 30, height: 30))
+            let selectedImage = UIImage(named: R.image.icon_mealmenu_orn.name)?.resize(CGSize(width: 30, height: 30))
             
             let image = selectedImage?.alpha(ReperecipeColor.Alpha.normal)
             return .Image(image: image! , selectedImage: selectedImage)

@@ -35,7 +35,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="ShoppingPagingViewController" storyboardName="Shopping" referencedIdentifier="ShoppingPagingViewController" id="5C8-h6-c7Z" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tda-Bm-eXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269.5" y="1526.5"/>
+            <point key="canvasLocation" x="2217.5" y="1110"/>
         </scene>
     </scenes>
 </document>
