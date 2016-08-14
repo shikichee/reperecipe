@@ -95,7 +95,7 @@
                                 <rect key="frame" x="10" y="122" width="355" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="70" id="0kQ-xP-pgR" customClass="RecipeCell" customModule="reperecipe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="RecipeCell" rowHeight="70" id="0kQ-xP-pgR" customClass="RecipeCell" customModule="reperecipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="355" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0kQ-xP-pgR" id="Hl4-V8-n2a">
@@ -105,8 +105,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUa-fX-3F8">
                                                     <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="curry" translatesAutoresizingMaskIntoConstraints="NO" id="cW7-Iq-XtM">
-                                                            <rect key="frame" x="8" y="0.0" width="60" height="60"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curry" translatesAutoresizingMaskIntoConstraints="NO" id="cW7-Iq-XtM">
+                                                            <rect key="frame" x="5" y="5" width="60" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="WiF-qf-OTd"/>
                                                                 <constraint firstAttribute="height" constant="60" id="iBf-EO-va5"/>
@@ -255,6 +255,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="recipeTitleLabel" destination="lIt-Kb-zFn" id="Slq-x9-aa7"/>
                         <outlet property="tableView" destination="NO1-hZ-3qt" id="W8Q-uc-H9J"/>
                         <segue destination="oh7-Fw-e49" kind="showDetail" identifier="showRecipeDetail" id="PUc-bZ-aCa"/>
                     </connections>

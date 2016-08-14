@@ -20,7 +20,7 @@ class IntroductionViewController: UIViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let secondViewController = segue.destinationViewController as! ViewController
                 
-                secondViewController.currentPage = indexPath.row
+                secondViewController.currentPage = indexPath.section
             }
         }
     }

@@ -28,18 +28,22 @@ class RefrigeratorPagingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let realm = try! Realm()
-        realmToken = realm.objects(Ingredient).addNotificationBlock { (change) in
-            self.ingredients = RefrigeratorRepository().getIngredients()
-            self.numberLabel.text = R.string.localizable.refrigeratorLabelIngredient(self.ingredients.count.description)
-            self.tableView.reloadData()
-        }
+        updateTitleLabel()
         
         // 右下のボタンが押された時、色を変更
         editButton.setBackgroundImage(R.image.btn_function_tapped(), forState: .Highlighted)
         editButton.setImage(R.image.icon_refrigerator_wht(), forState: .Highlighted)
         
         tableView.backgroundColor = ReperecipeColor.Background.white
+    }
+    
+    func updateTitleLabel() {
+        let realm = try! Realm()
+        realmToken = realm.objects(Ingredient).addNotificationBlock { (change) in
+            self.ingredients = RefrigeratorRepository().getIngredients()
+            self.numberLabel.text = R.string.localizable.refrigeratorLabelIngredient(self.ingredients.count.description)
+            self.tableView.reloadData()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {

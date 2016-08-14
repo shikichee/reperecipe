@@ -6,6 +6,7 @@
  Copyright © 2016年 Takuya Shikichi. All rights reserved.
  */
 
+"Recipe.Label.Title" = "レシピ %@";
 "Recipe.Label.Ingredient" = "材料(%@)";
 "Recipe.Label.DaysFrom" = "%@日前";
 

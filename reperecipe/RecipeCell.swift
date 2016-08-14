@@ -21,8 +21,9 @@ class RecipeCell: UITableViewCell {
         super.awakeFromNib()
         recipeView.layer.borderWidth = 1.0
         recipeView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
-        recipeView.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        recipeView.layer.shadowOpacity = 0.5
+        recipeView.layer.shadowColor = ReperecipeColor.Text.sub.CGColor
+        recipeView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        recipeView.layer.shadowOpacity = 0.3
         recipeView.layer.shadowRadius = 1.0
     }
 }

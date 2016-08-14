@@ -15,6 +15,7 @@ target 'reperecipe' do
   pod 'Presentation'
   pod 'RealmSwift'
   pod 'R.swift'
+  pod 'SwiftDate'
   pod 'Toucan'
   pod 'Moya'
 

@@ -12,8 +12,10 @@ import RealmSwift
 class MyRecipePagingViewController: UIViewController {
     var recipes = [Recipe]()
     var recipe: Recipe?
+    var realmToken: NotificationToken?
     
     @IBOutlet var tableView: UITableView?
+    @IBOutlet weak var recipeTitleLabel: UILabel!
     
     class func instantiateFromStoryboard() -> MyRecipePagingViewController {
         let storyboard = UIStoryboard(name: "PagingViewController", bundle: nil)
@@ -22,7 +24,7 @@ class MyRecipePagingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateTitleLabel()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -39,6 +41,7 @@ class MyRecipePagingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func didTapEditButton(sender: UIButton) {
         let firstButtonText = "レシピを新規作成"
         let secondButtonText = "献立を決める"
@@ -64,6 +67,18 @@ class MyRecipePagingViewController: UIViewController {
             }
         }
     }
+    
+    func updateTitleLabel() {
+        let realm = try! Realm()
+        realmToken = realm.objects(Recipe).addNotificationBlock { (change) in
+            self.recipes = MyRecipeRepository().getMyRecipe()
+            self.recipeTitleLabel.text = R.string.localizable.recipeLabelTitle(self.recipes.count.description)
+            self.tableView!.reloadData()
+        }
+    }
+    deinit {
+        realmToken?.stop()
+    }
 }
 
 extension MyRecipePagingViewController: UITableViewDataSource {
@@ -83,10 +98,8 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         cell.recipeImageView.image = recipe.image
         cell.refrigeratorNumberLabel.text = recipe.getRefrigeratorNumber().description
         cell.cookedNumberLabel.text = recipe.cookedNumber.description
-//        cell.lastCookedLabel.text = recipe.getDaysFromLastCookedDate().description
-        
-//        cell.layer.borderColor = ReperecipeColor.Line.normal.CGColor
-//        cell.layer.borderWidth = CGFloat(1)
+        cell.lastCookedLabel.text = recipe.lastCookedDate. ?? "-"
+//        getDaysFromLastCookedDate().description ?? "-"
         
         return cell
     }
@@ -99,6 +112,6 @@ extension MyRecipePagingViewController: UITableViewDataSource {
 }
 extension MyRecipePagingViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section != 0 ? CGFloat(8) : 0
+        return section != 0 ? CGFloat(0) : 0
     }
 }
