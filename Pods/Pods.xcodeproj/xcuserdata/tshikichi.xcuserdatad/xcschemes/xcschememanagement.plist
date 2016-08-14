@@ -89,6 +89,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Toucan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -97,7 +102,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08464A5E7543CB6554DE00DD165CBD7A</key>
+		<key>2006A3C2905CD99F7DEE93934CA630C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,22 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A338963B1B45329E161BAFC499BD908</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2F0B2AA0215BB8F873FD496468D3BCF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AA3C0988383915825A1DC316180E524</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5622718AA3B8C16E6E22940D8769B15B</key>
+		<key>53010AE7C050A8F04EF6AC10984A016A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,7 +137,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>959A28D8E1CAAB0FC20DA069DE8C046C</key>
+		<key>862F0AD8A80172C93ED6F7552B502775</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>87833585F38CAAD1CF67DB1B9FB3847C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8AAB9F06F3BCFEBB531F88EF237A9DD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,17 +157,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>BB70EB0565ED0526616F57DC26783D03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C3A04698AAE4D6124C20602D622956E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5A82921A1B97047AB8B8D3012D722A5</key>
+		<key>C51E6135C92412456713A7CEEF10C679</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C83D675EEAE13C42AA3B73B698AEA063</key>
+		<key>C5A82921A1B97047AB8B8D3012D722A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

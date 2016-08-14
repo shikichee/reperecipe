@@ -23,6 +23,7 @@ PODS:
   - RealmSwift (1.0.1):
     - Realm (= 1.0.1)
   - Result (2.1.1)
+  - SwiftDate (3.0.8)
   - Toucan (0.5.0)
 
 DEPENDENCIES:
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - Presentation
   - R.swift
   - RealmSwift
+  - SwiftDate
   - Toucan
 
 SPEC CHECKSUMS:
@@ -52,8 +54,9 @@ SPEC CHECKSUMS:
   Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
   RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
   Result: 822c879f145943320cc80a9a8372378e3d699fe4
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
-PODFILE CHECKSUM: e23e5947b6c86be469af5105ea3c3bc83bd31d92
+PODFILE CHECKSUM: 911f52b59a8cc73f50483bc4a934639dfbfd2d67
 
 COCOAPODS: 1.0.1
