@@ -8,6 +8,7 @@ target 'reperecipe' do
   
   # Pods for reperecipe
   pod 'AccordionTableViewController'
+  pod 'ActionSheetPicker-3.0'
   pod 'HxColor'
   pod 'ObjectMapper'
   pod 'Pages'

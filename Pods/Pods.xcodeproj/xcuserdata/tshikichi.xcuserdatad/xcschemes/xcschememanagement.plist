@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ActionSheetPicker-3.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -102,7 +107,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2006A3C2905CD99F7DEE93934CA630C8</key>
+		<key>053617A05C5A952CF2888B88D119FE01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1753D6ECCB4863853E4DA273DB572594</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E1B9C3EEE15EB37D95C5868D6DE7BFF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,11 +137,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53010AE7C050A8F04EF6AC10984A016A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>78C33D52F7E2D591E77871DBB03E8468</key>
 		<dict>
 			<key>primary</key>
@@ -137,17 +147,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>862F0AD8A80172C93ED6F7552B502775</key>
+		<key>93BE765B7DA359CACDAF5B1CB9D978F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87833585F38CAAD1CF67DB1B9FB3847C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8AAB9F06F3BCFEBB531F88EF237A9DD4</key>
+		<key>A0A5C0183C18F442CE8740D81C5E6DA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,17 +162,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB70EB0565ED0526616F57DC26783D03</key>
+		<key>BC243530ADF12C53906CBBC2A302D06A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C13E6435B014A02BC073338ED4ABE12F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C3A04698AAE4D6124C20602D622956E5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C51E6135C92412456713A7CEEF10C679</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -188,6 +193,11 @@
 			<true/>
 		</dict>
 		<key>D88EC3EA3259794DC24AA636D2D29615</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F248945DE2470202BB73382DFBF911C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

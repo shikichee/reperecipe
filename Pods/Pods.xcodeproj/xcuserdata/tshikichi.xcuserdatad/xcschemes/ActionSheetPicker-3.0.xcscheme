@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E1B9C3EEE15EB37D95C5868D6DE7BFF"
-               BuildableName = "Rswift.framework"
-               BlueprintName = "R.swift.Library"
+               BlueprintIdentifier = "053617A05C5A952CF2888B88D119FE01"
+               BuildableName = "ActionSheetPicker_3_0.framework"
+               BlueprintName = "ActionSheetPicker-3.0"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1E1B9C3EEE15EB37D95C5868D6DE7BFF"
-            BuildableName = "Rswift.framework"
-            BlueprintName = "R.swift.Library"
+            BlueprintIdentifier = "053617A05C5A952CF2888B88D119FE01"
+            BuildableName = "ActionSheetPicker_3_0.framework"
+            BlueprintName = "ActionSheetPicker-3.0"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

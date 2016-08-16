@@ -1,5 +1,6 @@
 PODS:
   - AccordionTableViewController (0.0.1)
+  - ActionSheetPicker-3.0 (2.2.0)
   - Alamofire (3.4.1)
   - Cartography (0.6.0)
   - HxColor (2.0.0)
@@ -28,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - AccordionTableViewController
+  - ActionSheetPicker-3.0
   - HxColor
   - Moya
   - ObjectMapper
@@ -41,6 +43,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AccordionTableViewController: 48b2581d8c49001a55851a3700f0921cfe8a4524
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
   HxColor: dbf82e4363eaef1314f683514e8bb2716a00554d
@@ -57,6 +60,6 @@ SPEC CHECKSUMS:
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
-PODFILE CHECKSUM: 911f52b59a8cc73f50483bc4a934639dfbfd2d67
+PODFILE CHECKSUM: eae71a35a808af6a3e6621ccccb4a24294c17b9c
 
 COCOAPODS: 1.0.1
