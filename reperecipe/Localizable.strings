@@ -9,6 +9,7 @@
 "Recipe.Label.Title" = "レシピ %@";
 "Recipe.Label.Ingredient" = "材料(%@)";
 "Recipe.Label.DaysFrom" = "%@日前";
+"Recipe.Label.CookedNumer" = "作った回数 %@回";
 
 "Refrigerator.Label.Ingredient" = "冷蔵庫にある材料 %@";
 

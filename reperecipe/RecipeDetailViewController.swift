@@ -11,10 +11,13 @@ import UIKit
 
 class RecipeDetailViewController: UIViewController {
     
-    
-    @IBOutlet weak var recipeImageView: UIImageView!
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cookedNumberLabel: UILabel!
+    @IBOutlet weak var lastEatDateLabel: UILabel!
+    
+    @IBOutlet weak var recipeImageView: UIImageView!
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -46,6 +49,8 @@ class RecipeDetailViewController: UIViewController {
         dismissViewControllerAnimated(false, completion: nil)
     }
     @IBAction func didTapEditButton(sender: AnyObject) {
+    }
+    @IBAction func didTapAddToMenuButton(sender: AnyObject) {
     }
     
     var recipe: Recipe {

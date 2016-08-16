@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カレーライス" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54L-hn-Ibj">
-                                <rect key="frame" x="80" y="12" width="295" height="19"/>
+                                <rect key="frame" x="82" y="12" width="293" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="icY-z3-9SM"/>
                                 </constraints>
@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31L-c1-DUK">
-                                <rect key="frame" x="80" y="40" width="215" height="20"/>
+                                <rect key="frame" x="82" y="40" width="213" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaG-gV-aRp" userLabel="refrigeratorNumberLabel">
                                         <rect key="frame" x="20" y="3" width="7" height="14"/>
@@ -79,9 +79,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curry" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-uy-TEp">
-                                <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                <rect key="frame" x="5" y="5" width="62" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="7aQ-zG-wGr"/>
+                                    <constraint firstAttribute="width" constant="62" id="7aQ-zG-wGr"/>
                                     <constraint firstAttribute="height" constant="60" id="tcX-Oe-WAk"/>
                                 </constraints>
                                 <variation key="default">

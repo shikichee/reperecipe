@@ -97,11 +97,15 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         
         cell.titleLabel?.text = recipe.name
         cell.recipeImageView.image = recipe.image
+     
         cell.refrigeratorNumberLabel.text = recipe.getRefrigeratorNumber().description
         cell.cookedNumberLabel.text = recipe.cookedNumber.description
 //        cell.lastCookedLabel.text = recipe.lastCookedDate ?? "-"
 //        getDaysFromLastCookedDate().description ?? "-"
         
+        cell.recipeImageView.layer.borderWidth = CGFloat(1)
+        cell.recipeImageView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
+        cell.recipeImageView.layer.masksToBounds = true
         return cell
     }
     
@@ -114,5 +118,9 @@ extension MyRecipePagingViewController: UITableViewDataSource {
 extension MyRecipePagingViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return section != 0 ? CGFloat(10) : 0
+    }
+    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let v = view as! UITableViewHeaderFooterView
+        v.backgroundView!.backgroundColor = ReperecipeColor.Background.white
     }
 }

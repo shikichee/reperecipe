@@ -104,5 +104,9 @@ extension RefrigeratorPagingViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return section != 0 ? CGFloat(10) : 0
     }
+    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let v = view as! UITableViewHeaderFooterView
+        v.backgroundView!.backgroundColor = ReperecipeColor.Background.white
+    }
 }
 

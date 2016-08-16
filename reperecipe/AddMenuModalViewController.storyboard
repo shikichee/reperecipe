@@ -206,8 +206,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="NE6-6r-z19"/>
                                         <exclude reference="9as-r9-DMV"/>
+                                        <exclude reference="NE6-6r-z19"/>
                                     </mask>
                                 </variation>
                             </scrollView>
