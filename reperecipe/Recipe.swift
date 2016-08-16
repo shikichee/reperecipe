@@ -20,7 +20,7 @@ class Recipe: Object {
     var ingredients = List<IngredientsOfRecipe>()
     dynamic var memo = ""
     dynamic var cookedNumber = 0
-    dynamic var lastCookedDate =  NSDate(timeIntervalSince1970: 0)
+    dynamic var lastCookedDate =  NSDateZero
     dynamic private var _image: UIImage? = nil
     dynamic var image: UIImage? {
         set{

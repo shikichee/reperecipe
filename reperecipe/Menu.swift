@@ -10,6 +10,6 @@ import RealmSwift
 
 class Menu: Object {
     dynamic var id = ""
-    dynamic var date = NSDate(timeIntervalSince1970: 0)
+    dynamic var date = NSDateZero
     var recipe = List<Recipe>()
 }

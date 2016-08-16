@@ -14,16 +14,17 @@ class MyRecipePagingViewController: UIViewController {
     var recipe: Recipe?
     var realmToken: NotificationToken?
     
-    @IBOutlet var tableView: UITableView?
+    @IBOutlet var tableView: UITableView!
     @IBOutlet weak var recipeTitleLabel: UILabel!
     
     class func instantiateFromStoryboard() -> MyRecipePagingViewController {
-        let storyboard = UIStoryboard(name: "PagingViewController", bundle: nil)
+        let storyboard = R.storyboard.pagingViewController()
         return storyboard.instantiateViewControllerWithIdentifier(String(self)) as! MyRecipePagingViewController
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView!.registerNib(R.nib.recipeCell(), forCellReuseIdentifier: R.reuseIdentifier.recipeCell.identifier)
         updateTitleLabel()
     }
     
@@ -98,7 +99,7 @@ extension MyRecipePagingViewController: UITableViewDataSource {
         cell.recipeImageView.image = recipe.image
         cell.refrigeratorNumberLabel.text = recipe.getRefrigeratorNumber().description
         cell.cookedNumberLabel.text = recipe.cookedNumber.description
-        cell.lastCookedLabel.text = recipe.lastCookedDate. ?? "-"
+//        cell.lastCookedLabel.text = recipe.lastCookedDate ?? "-"
 //        getDaysFromLastCookedDate().description ?? "-"
         
         return cell
@@ -112,6 +113,6 @@ extension MyRecipePagingViewController: UITableViewDataSource {
 }
 extension MyRecipePagingViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section != 0 ? CGFloat(0) : 0
+        return section != 0 ? CGFloat(10) : 0
     }
 }
