@@ -368,7 +368,7 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="材料(0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-AJ-itP">
                                                 <rect key="frame" x="0.0" y="455" width="375" height="44"/>
-                                                <color key="backgroundColor" red="0.89803922176361084" green="0.81176471710205078" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.97254901960784312" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="AEO-ek-6TW"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Bto-TP-U1c"/>
@@ -476,9 +476,9 @@
                                                             <variation key="default">
                                                                 <mask key="constraints">
                                                                     <exclude reference="7Ej-ZL-dTq"/>
-                                                                    <exclude reference="odL-q4-erP"/>
                                                                     <exclude reference="NrJ-IS-pWv"/>
                                                                     <exclude reference="bxy-jc-2J0"/>
+                                                                    <exclude reference="odL-q4-erP"/>
                                                                 </mask>
                                                             </variation>
                                                         </tableViewCellContentView>
@@ -501,7 +501,7 @@
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q81-pN-edd">
                                                 <rect key="frame" x="0.0" y="664" width="375" height="44"/>
-                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.97254901960784312" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="4zu-Bi-cIe"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="6Mf-b1-u95"/>
@@ -634,11 +634,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="au6-E9-oKq"/>
-                                <exclude reference="hvM-vd-kUo"/>
                                 <exclude reference="3ru-x3-gOg"/>
                                 <exclude reference="Gy4-NW-8cn"/>
                                 <exclude reference="mnJ-N6-wQt"/>
+                                <exclude reference="au6-E9-oKq"/>
+                                <exclude reference="hvM-vd-kUo"/>
                             </mask>
                         </variation>
                     </view>
@@ -651,6 +651,7 @@
                         <outlet property="ingredientLabel" destination="3NK-AJ-itP" id="tZv-89-XYK"/>
                         <outlet property="lastEatDateLabel" destination="ZCy-Vo-60I" id="sdq-gt-wDG"/>
                         <outlet property="memoTextView" destination="n2i-2D-SEX" id="Ns1-Wu-muG"/>
+                        <outlet property="memoTitleLabel" destination="q81-pN-edd" id="MJj-nX-8CM"/>
                         <outlet property="nameLabel" destination="QRZ-4H-r9l" id="y3B-bG-1rp"/>
                         <outlet property="recipeImageView" destination="41g-Uv-XW3" id="UOF-GG-nH5"/>
                         <outlet property="refrigeratorLabel" destination="KRe-Z0-oir" id="T8t-Dl-ax5"/>

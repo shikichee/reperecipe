@@ -24,6 +24,7 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var ingredientLabel: UILabel!
     @IBOutlet weak var refrigeratorLabel: UILabel!
     
+    @IBOutlet weak var memoTitleLabel: UILabel!
     @IBOutlet weak var memoTextView: UITextView!
     
     override func viewDidLoad() {
@@ -41,9 +42,15 @@ class RecipeDetailViewController: UIViewController {
         
         ingredientLabel.text = recipeViewModel.ingredientNumberText
         refrigeratorLabel.text = recipeViewModel.refrigeratorNumberText
-        
+
         memoTextView.text = recipe.memo
         
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        ingredientLabel.topBottomBorder(borderWidth: 1.0, borderColor: ReperecipeColor.Line.normal)
+        memoTitleLabel.topBottomBorder(borderWidth: 1.0, borderColor: ReperecipeColor.Line.normal)
     }
     @IBAction func didTapStopButton(sender: AnyObject) {
         dismissViewControllerAnimated(false, completion: nil)

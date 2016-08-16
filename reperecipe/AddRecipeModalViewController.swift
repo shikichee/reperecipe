@@ -12,10 +12,12 @@ import Toucan
 
 class AddRecipeModalViewController: UIViewController{
     
+    @IBOutlet weak var titleBarLabel: UILabel!
+    
+    @IBOutlet weak var categoryBarLabel: UILabel!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var previewImageView: UIImageView!
-    @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var ingredientTableView: UITableView!
     @IBOutlet weak var ingredientTableViewHeight: NSLayoutConstraint!
     
@@ -29,12 +31,21 @@ class AddRecipeModalViewController: UIViewController{
     var image: UIImage!
     var categoryId: Int = 0
     var ingredients = [IngredientsOfRecipe]()
+    var pickerView: PopUpPickerView!
+    let array = ["test1", "test2", "test3", "test4", "test5"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ingredientTableView.delegate = self
         ingredientTableView.dataSource = self
         ingredientTableView.registerNib(UINib(nibName: "IngredientCellOfRecipe", bundle: nil), forCellReuseIdentifier: "IngredientCellOfRecipe")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        titleBarLabel.topBottomBorder(borderWidth: 1.0, borderColor: ReperecipeColor.Line.normal)
+        categoryBarLabel.topBottomBorder(borderWidth: 1.0, borderColor: ReperecipeColor.Line.normal)
     }
     
     @IBAction func didTapAddImage(sender: AnyObject) {
@@ -112,44 +123,45 @@ extension AddRecipeModalViewController: UINavigationControllerDelegate {
 
 }
 
-extension AddRecipeModalViewController: UICollectionViewDelegate {
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-
-        let returnSize = CGSize(width: view.frame.width/6, height: 120)
-        
-        return returnSize
-    }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        for i in 0..<RecipeViewModel.categories().count {
-            let iP = NSIndexPath(forItem: i, inSection: 0)
-            let cell = collectionView.cellForItemAtIndexPath(iP) as! IngredientsCategoryCell
-            
-            if iP != indexPath {
-                //選択されたセル以外のセル
-                cell.imageView.alpha = 0.3
-            } else {
-                cell.imageView.alpha = 1.0
-                categoryId = cell.id
-            }
-        }
-        
-    }
-}
-extension AddRecipeModalViewController: UICollectionViewDataSource {
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = categoryCollectionView.dequeueReusableCellWithReuseIdentifier("IngredientCategoryCell", forIndexPath: indexPath) as! IngredientsCategoryCell
-        
-        cell.id = RecipeViewModel.categories()[indexPath.row].id
-        cell.imageView.image = RecipeViewModel.categories()[indexPath.row].image
-        cell.nameLabel.text = RecipeViewModel.categories()[indexPath.row].title
-        
-        return cell
-    }
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return RecipeViewModel.categories().count
-    }
-}
+//extension AddRecipeModalViewController: UICollectionViewDelegate {
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//
+//        let returnSize = CGSize(width: view.frame.width/6, height: 120)
+//        
+//        return returnSize
+//    }
+//    
+//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        for i in 0..<RecipeViewModel.categories().count {
+//            let iP = NSIndexPath(forItem: i, inSection: 0)
+//            let cell = collectionView.cellForItemAtIndexPath(iP) as! IngredientsCategoryCell
+//            
+//            if iP != indexPath {
+//                //選択されたセル以外のセル
+//                cell.imageView.alpha = 0.3
+//            } else {
+//                cell.imageView.alpha = 1.0
+//                categoryId = cell.id
+//            }
+//        }
+//        
+//    }
+//}
+//}
+//extension AddRecipeModalViewController: UICollectionViewDataSource {
+//    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+//        let cell = categoryCollectionView.dequeueReusableCellWithReuseIdentifier("IngredientCategoryCell", forIndexPath: indexPath) as! IngredientsCategoryCell
+//        
+//        cell.id = RecipeViewModel.categories()[indexPath.row].id
+//        cell.imageView.image = RecipeViewModel.categories()[indexPath.row].image
+//        cell.nameLabel.text = RecipeViewModel.categories()[indexPath.row].title
+//        
+//        return cell
+//    }
+//    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return RecipeViewModel.categories().count
+//    }
+//}
 
 extension AddRecipeModalViewController: UITableViewDelegate {
     
