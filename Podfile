@@ -19,10 +19,14 @@ target 'reperecipe' do
   pod 'SwiftDate'
   pod 'Toucan'
   pod 'Moya'
+  pod 'RxSwift',    '~> 2.0'
+  pod 'RxCocoa',    '~> 2.0'
 
   target 'reperecipeTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '~> 2.0'
+    pod 'RxTests',    '~> 2.0'
   end
 
   target 'reperecipeUITests' do

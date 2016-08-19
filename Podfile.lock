@@ -24,6 +24,13 @@ PODS:
   - RealmSwift (1.0.1):
     - Realm (= 1.0.1)
   - Result (2.1.1)
+  - RxBlocking (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxCocoa (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxSwift (2.6.0)
+  - RxTests (2.6.0):
+    - RxSwift (~> 2.5)
   - SwiftDate (3.0.8)
   - Toucan (0.5.0)
 
@@ -38,6 +45,10 @@ DEPENDENCIES:
   - Presentation
   - R.swift
   - RealmSwift
+  - RxBlocking (~> 2.0)
+  - RxCocoa (~> 2.0)
+  - RxSwift (~> 2.0)
+  - RxTests (~> 2.0)
   - SwiftDate
   - Toucan
 
@@ -57,9 +68,13 @@ SPEC CHECKSUMS:
   Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
   RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
   Result: 822c879f145943320cc80a9a8372378e3d699fe4
+  RxBlocking: f2e0a7e74d5e9d3029d2b1118e2af01f583fbdd8
+  RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
+  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+  RxTests: cdcc379c70e80089a8bc2c99515223339d1c3b81
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
-PODFILE CHECKSUM: eae71a35a808af6a3e6621ccccb4a24294c17b9c
+PODFILE CHECKSUM: 160f785b97563d8b1f5a04d5469a73ec382ac2bd
 
 COCOAPODS: 1.0.1
