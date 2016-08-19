@@ -44,6 +44,8 @@
 		49422FC51D34C42800849795 /* EditIngredientsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49422FC41D34C42800849795 /* EditIngredientsCell.xib */; };
 		4942EBD91D50BB1C00CA1847 /* MenuCustomHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942EBD81D50BB1C00CA1847 /* MenuCustomHeaderFooterView.swift */; };
 		4942EBDB1D50C1AF00CA1847 /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4942EBDA1D50C1AF00CA1847 /* RecipeCell.xib */; };
+		494BAAE11D66C2E900BCBFBF /* ReperecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BAAE01D66C2E900BCBFBF /* ReperecipeService.swift */; };
+		494BAAE41D66C74000BCBFBF /* IngredientsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BAAE31D66C74000BCBFBF /* IngredientsResponse.swift */; };
 		495101A51D2CB4CB002BDC12 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A41D2CB4CB002BDC12 /* RecipeCell.swift */; };
 		495101A71D2CE12A002BDC12 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A61D2CE12A002BDC12 /* IngredientCell.swift */; };
 		495101A91D2CEF6E002BDC12 /* ShoppingPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */; };
@@ -130,6 +132,8 @@
 		49422FC41D34C42800849795 /* EditIngredientsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIngredientsCell.xib; sourceTree = "<group>"; };
 		4942EBD81D50BB1C00CA1847 /* MenuCustomHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCustomHeaderFooterView.swift; sourceTree = "<group>"; };
 		4942EBDA1D50C1AF00CA1847 /* RecipeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
+		494BAAE01D66C2E900BCBFBF /* ReperecipeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReperecipeService.swift; sourceTree = "<group>"; };
+		494BAAE31D66C74000BCBFBF /* IngredientsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsResponse.swift; sourceTree = "<group>"; };
 		495101A41D2CB4CB002BDC12 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		495101A61D2CE12A002BDC12 /* IngredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		495101A81D2CEF6E002BDC12 /* ShoppingPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPagingViewController.swift; sourceTree = "<group>"; };
@@ -247,9 +251,9 @@
 				49422FC01D34C02400849795 /* EditIngredientsModalDataSource.swift */,
 				49422FC21D34C3BA00849795 /* EditIngredientsCell.swift */,
 				49422FC41D34C42800849795 /* EditIngredientsCell.xib */,
-				490792421D2E213900C15B3E /* AddRecipeModalViewController.swift */,
 				4970903C1D45E3E800EFEEA3 /* IngredientCellOfRecipe.xib */,
 				4970903E1D45E7C800EFEEA3 /* IngredientCellOfRecipe.swift */,
+				490792421D2E213900C15B3E /* AddRecipeModalViewController.swift */,
 				4986B2A21D37D8EC00ABE3B2 /* AddRecipeModalViewController.storyboard */,
 				493EB36A1D3E07F400F6C8CD /* IngredientsCategoryCell.swift */,
 				4923C5561D50EB21000DA747 /* AddMenuModalViewController.storyboard */,
@@ -290,6 +294,15 @@
 				4923C55C1D51B524000DA747 /* ShoppingSectionHeader.swift */,
 			);
 			name = Shopping;
+			sourceTree = "<group>";
+		};
+		494BAAE21D66C2EF00BCBFBF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				494BAAE01D66C2E900BCBFBF /* ReperecipeService.swift */,
+				494BAAE31D66C74000BCBFBF /* IngredientsResponse.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		497090401D4873DB00EFEEA3 /* Resources */ = {
@@ -390,6 +403,7 @@
 		49D858E91D1F86A5006D0479 /* reperecipe */ = {
 			isa = PBXGroup;
 			children = (
+				494BAAE21D66C2EF00BCBFBF /* Network */,
 				492F98341D59B69600D94571 /* Extensioin */,
 				49064A0E1D49D1DC00EB38B3 /* Supporting Files */,
 				497090401D4873DB00EFEEA3 /* Resources */,
@@ -759,7 +773,9 @@
 				490792A41D3498CE00C15B3E /* EditIngredientsModalViewController.swift in Sources */,
 				499F92AD1D52371C0057FFED /* ShoppingIngredientCell.swift in Sources */,
 				4923C5591D50EB4B000DA747 /* AddMenuModalViewController.swift in Sources */,
+				494BAAE11D66C2E900BCBFBF /* ReperecipeService.swift in Sources */,
 				490792951D30EA9B00C15B3E /* Ingredient.swift in Sources */,
+				494BAAE41D66C74000BCBFBF /* IngredientsResponse.swift in Sources */,
 				4923C55D1D51B524000DA747 /* ShoppingSectionHeader.swift in Sources */,
 				4989A57E1D2BA53E0079BE50 /* PagingMenuControllerOptions.swift in Sources */,
 				4907924E1D2F9F2E00C15B3E /* IntroductionViewController.swift in Sources */,

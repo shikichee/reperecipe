@@ -16,6 +16,7 @@ class MyRecipePagingViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var recipeTitleLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     
     class func instantiateFromStoryboard() -> MyRecipePagingViewController {
         let storyboard = R.storyboard.pagingViewController()
@@ -26,6 +27,7 @@ class MyRecipePagingViewController: UIViewController {
         super.viewDidLoad()
         tableView!.registerNib(R.nib.recipeCell(), forCellReuseIdentifier: R.reuseIdentifier.recipeCell.identifier)
         updateTitleLabel()
+        editButton.setBackgroundImage(R.image.btn_function_tapped(), forState: .Highlighted)
     }
     
     override func viewWillAppear(animated: Bool) {

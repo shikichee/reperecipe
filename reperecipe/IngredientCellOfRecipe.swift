@@ -12,7 +12,12 @@ import UIKit
 class IngredientCellOfRecipe: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var memoTextField: UITextField!
+    @IBOutlet weak var leftContentView: UIView!
     
+    override func awakeFromNib() {
+        leftContentView.layer.borderWidth = 1.0
+        leftContentView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
+    }
     var deleteAction: () -> () = {
     }
  

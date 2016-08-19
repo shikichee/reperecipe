@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-1L-Z0l">
+                                <rect key="frame" x="0.0" y="81" width="375" height="586"/>
+                                <color key="backgroundColor" red="1" green="0.98823529480000005" blue="0.95686274770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8K-HF-5lC" userLabel="TopBorderView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
                                 <color key="backgroundColor" red="0.89803922179999995" green="0.81176471709999998" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,7 +97,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NO1-hZ-3qt">
                                 <rect key="frame" x="10" y="122" width="355" height="545"/>
                                 <color key="backgroundColor" red="1" green="0.98823529481887817" blue="0.95686274766921997" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.98823529481887817" blue="0.95686274766921997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" rowHeight="72" id="0kQ-xP-pgR" customClass="RecipeCell" customModule="reperecipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="355" height="72"/>
@@ -109,7 +112,7 @@
                                     <outlet property="delegate" destination="COb-2c-gWf" id="KIQ-se-J1I"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGn-EJ-uFb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGn-EJ-uFb">
                                 <rect key="frame" x="305" y="597" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="16P-h9-i9M"/>
@@ -130,11 +133,14 @@
                             <constraint firstItem="NO1-hZ-3qt" firstAttribute="leading" secondItem="Guh-bF-THu" secondAttribute="leading" constant="10" id="5jV-LX-iCq"/>
                             <constraint firstItem="0g2-UK-03C" firstAttribute="leading" secondItem="Guh-bF-THu" secondAttribute="leading" constant="10" id="61a-B2-hOK"/>
                             <constraint firstItem="d8K-HF-5lC" firstAttribute="leading" secondItem="Guh-bF-THu" secondAttribute="leading" id="6ug-b0-IfB"/>
+                            <constraint firstItem="o2R-ee-vyF" firstAttribute="top" secondItem="k8w-1L-Z0l" secondAttribute="bottom" id="9NK-gD-flN"/>
                             <constraint firstItem="NO1-hZ-3qt" firstAttribute="top" secondItem="0g2-UK-03C" secondAttribute="bottom" constant="5" id="Ad1-SJ-P2F"/>
                             <constraint firstItem="0g2-UK-03C" firstAttribute="top" secondItem="pla-Lv-Uzb" secondAttribute="bottom" constant="5" id="BPi-Iv-4hx"/>
                             <constraint firstAttribute="trailing" secondItem="d8K-HF-5lC" secondAttribute="trailing" id="DvE-FS-Ydm"/>
+                            <constraint firstItem="k8w-1L-Z0l" firstAttribute="leading" secondItem="Guh-bF-THu" secondAttribute="leading" id="J4P-e3-ICo"/>
                             <constraint firstItem="pla-Lv-Uzb" firstAttribute="top" secondItem="lOg-4J-u0o" secondAttribute="bottom" id="On8-qh-e0k"/>
                             <constraint firstAttribute="trailing" secondItem="NO1-hZ-3qt" secondAttribute="trailing" constant="10" id="TvX-bW-hYc"/>
+                            <constraint firstAttribute="trailing" secondItem="k8w-1L-Z0l" secondAttribute="trailing" id="ZaP-vZ-8bN"/>
                             <constraint firstAttribute="trailing" secondItem="0g2-UK-03C" secondAttribute="trailing" constant="10" id="bpx-af-2T2"/>
                             <constraint firstAttribute="trailing" secondItem="oGn-EJ-uFb" secondAttribute="trailing" constant="10" id="c1j-Xl-hZz"/>
                             <constraint firstItem="lOg-4J-u0o" firstAttribute="top" secondItem="d8K-HF-5lC" secondAttribute="bottom" id="c79-jg-eYw"/>
@@ -142,11 +148,13 @@
                             <constraint firstItem="lOg-4J-u0o" firstAttribute="leading" secondItem="Guh-bF-THu" secondAttribute="leading" id="dfm-OB-f18"/>
                             <constraint firstAttribute="bottom" secondItem="NO1-hZ-3qt" secondAttribute="bottom" id="lTR-vx-nQF"/>
                             <constraint firstAttribute="trailing" secondItem="lOg-4J-u0o" secondAttribute="trailing" id="nvu-82-7cu"/>
+                            <constraint firstItem="k8w-1L-Z0l" firstAttribute="top" secondItem="lOg-4J-u0o" secondAttribute="bottom" id="pUP-Ac-vvd"/>
                             <constraint firstItem="d8K-HF-5lC" firstAttribute="top" secondItem="Guh-bF-THu" secondAttribute="top" id="uFq-Od-m7Y"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="editButton" destination="oGn-EJ-uFb" id="tbT-bk-g4P"/>
                         <outlet property="recipeTitleLabel" destination="lIt-Kb-zFn" id="Slq-x9-aa7"/>
                         <outlet property="tableView" destination="NO1-hZ-3qt" id="r9S-ep-lgQ"/>
                         <segue destination="oh7-Fw-e49" kind="showDetail" identifier="showRecipeDetail" id="PUc-bZ-aCa"/>
@@ -353,7 +361,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5U-iv-pqA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5U-iv-pqA">
                                                 <rect key="frame" x="20" y="391" width="335" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="UjL-5j-8JX"/>
@@ -362,6 +370,7 @@
                                                 <state key="normal" title="このレシピを献立に追加" backgroundImage="btn_main_normal">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <state key="highlighted" backgroundImage="btn_main_tapped"/>
                                                 <connections>
                                                     <action selector="didTapAddToMenuButton:" destination="oh7-Fw-e49" eventType="touchUpInside" id="uwr-dz-Ry6"/>
                                                 </connections>
@@ -486,6 +495,7 @@
                                                             <outlet property="categoryImageView" destination="NCT-zp-T2E" id="cjv-aL-cEx"/>
                                                             <outlet property="nameLabel" destination="JGf-V2-VAQ" id="qlw-IF-9eQ"/>
                                                             <outlet property="quantityLabel" destination="FPO-XG-1bK" id="cze-QT-KTS"/>
+                                                            <outlet property="refrigeratorImageView" destination="OV6-sw-gXL" id="nh6-Ut-VDf"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -534,7 +544,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="oLg-dM-yuf"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZT-Y6-EXI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZT-Y6-EXI">
                                                 <rect key="frame" x="20" y="767" width="335" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="7Gd-v3-qdM"/>
@@ -648,6 +658,7 @@
                     <connections>
                         <outlet property="categoryImageView" destination="ccl-OI-L2B" id="JNC-D9-omH"/>
                         <outlet property="cookedNumberLabel" destination="d9H-Rb-wQv" id="AQg-nX-w0f"/>
+                        <outlet property="firstAddMenuButton" destination="O5U-iv-pqA" id="YZl-29-HE0"/>
                         <outlet property="ingredientLabel" destination="3NK-AJ-itP" id="tZv-89-XYK"/>
                         <outlet property="lastEatDateLabel" destination="ZCy-Vo-60I" id="sdq-gt-wDG"/>
                         <outlet property="memoTextView" destination="n2i-2D-SEX" id="Ns1-Wu-muG"/>
@@ -655,6 +666,7 @@
                         <outlet property="nameLabel" destination="QRZ-4H-r9l" id="y3B-bG-1rp"/>
                         <outlet property="recipeImageView" destination="41g-Uv-XW3" id="UOF-GG-nH5"/>
                         <outlet property="refrigeratorLabel" destination="KRe-Z0-oir" id="T8t-Dl-ax5"/>
+                        <outlet property="secondAddMenuButton" destination="3ZT-Y6-EXI" id="Ejd-oT-BiR"/>
                         <outlet property="tableView" destination="QH7-KO-hkl" id="3T3-eY-oCG"/>
                     </connections>
                 </viewController>
@@ -666,6 +678,7 @@
     <resources>
         <image name="btn_function_normal" width="60" height="62"/>
         <image name="btn_main_normal" width="43" height="46"/>
+        <image name="btn_main_tapped" width="41" height="46"/>
         <image name="icon_close_wht-1" width="30" height="32"/>
         <image name="icon_edit_wht-1" width="30" height="32"/>
         <image name="icon_mealmenu_txt_sub" width="60" height="60"/>

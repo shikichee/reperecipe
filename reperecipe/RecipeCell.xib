@@ -105,6 +105,7 @@
                             <constraint firstItem="TdK-uy-TEp" firstAttribute="leading" secondItem="Qhc-J1-unW" secondAttribute="leading" constant="5" id="SkF-ZB-WEc"/>
                             <constraint firstItem="TdK-uy-TEp" firstAttribute="top" secondItem="Qhc-J1-unW" secondAttribute="top" constant="5" id="YPQ-ex-cUH"/>
                             <constraint firstItem="TdK-uy-TEp" firstAttribute="centerY" secondItem="Qhc-J1-unW" secondAttribute="centerY" id="dW4-2t-OI4"/>
+                            <constraint firstAttribute="bottom" secondItem="31L-c1-DUK" secondAttribute="bottom" constant="10" id="dou-Rs-oRy"/>
                             <constraint firstItem="TdK-uy-TEp" firstAttribute="leading" secondItem="Qhc-J1-unW" secondAttribute="leading" constant="5" id="gN0-MS-5JZ"/>
                             <constraint firstItem="54L-hn-Ibj" firstAttribute="leading" secondItem="TdK-uy-TEp" secondAttribute="trailing" constant="15" id="gbU-pq-tda"/>
                             <constraint firstItem="9j6-zZ-hwf" firstAttribute="leading" secondItem="31L-c1-DUK" secondAttribute="trailing" id="hiN-Ob-NWe"/>
@@ -115,6 +116,7 @@
                                 <exclude reference="A2L-G9-bdH"/>
                                 <exclude reference="dW4-2t-OI4"/>
                                 <exclude reference="gN0-MS-5JZ"/>
+                                <exclude reference="BEe-88-YUM"/>
                                 <exclude reference="mMN-LX-7Vs"/>
                             </mask>
                         </variation>

@@ -18,7 +18,8 @@ class RecipeDetailViewController: UIViewController {
     
     @IBOutlet weak var recipeImageView: UIImageView!
     
-    
+    @IBOutlet weak var firstAddMenuButton: UIButton!
+    @IBOutlet weak var secondAddMenuButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var ingredientLabel: UILabel!
@@ -44,6 +45,8 @@ class RecipeDetailViewController: UIViewController {
         refrigeratorLabel.text = recipeViewModel.refrigeratorNumberText
 
         memoTextView.text = recipe.memo
+        firstAddMenuButton.setBackgroundImage(R.image.btn_main_tapped(), forState: .Highlighted)
+        secondAddMenuButton.setBackgroundImage(R.image.btn_main_tapped(), forState: .Highlighted)
         
     }
     override func viewDidAppear(animated: Bool) {
