@@ -120,6 +120,13 @@
                                     <constraint firstAttribute="height" constant="50" id="znF-cT-HPe"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="42Y-b7-WPP" userLabel="searchdWordsTableView">
+                                <rect key="frame" x="10" y="121" width="410" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="xnP-7w-vmJ"/>
+                                </constraints>
+                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冷蔵庫にある食材 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xni-zG-dX7">
                                 <rect key="frame" x="5" y="128" width="151" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -169,6 +176,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="42Y-b7-WPP" firstAttribute="top" secondItem="20n-7E-Uz9" secondAttribute="bottom" constant="10" id="0ig-at-4Z1"/>
                             <constraint firstAttribute="trailing" secondItem="M5z-5x-1B0" secondAttribute="trailing" id="5PP-Vh-en1"/>
                             <constraint firstAttribute="trailing" secondItem="ZvH-1t-ATw" secondAttribute="trailing" id="7P8-XK-fSJ"/>
                             <constraint firstItem="20n-7E-Uz9" firstAttribute="top" secondItem="BUL-85-3aV" secondAttribute="bottom" constant="10" id="7zz-kN-PgY"/>
@@ -183,6 +191,8 @@
                             <constraint firstItem="BUL-85-3aV" firstAttribute="top" secondItem="ZvH-1t-ATw" secondAttribute="bottom" id="dhW-SA-aHY"/>
                             <constraint firstItem="M5z-5x-1B0" firstAttribute="leading" secondItem="axF-Db-o5d" secondAttribute="leading" id="jWs-iF-jKy"/>
                             <constraint firstItem="YR7-dY-oF0" firstAttribute="top" secondItem="M5z-5x-1B0" secondAttribute="bottom" id="m8c-bh-wHm"/>
+                            <constraint firstItem="42Y-b7-WPP" firstAttribute="leading" secondItem="axF-Db-o5d" secondAttribute="leading" constant="10" id="sxT-cr-kw6"/>
+                            <constraint firstAttribute="trailing" secondItem="42Y-b7-WPP" secondAttribute="trailing" constant="180" id="w2k-ay-oxJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="khm-pW-Du1"/>

@@ -10,17 +10,17 @@ import Foundation
 import Moya
 
 enum ReperecipeService {
-    case SearchIngredients(text:String)
+    case SearchIngredients(String)
 }
 
 extension ReperecipeService: TargetType {
     var baseURL: NSURL {
-        return  NSURL(string: "http://localhost:3000")!
+        return  NSURL(string: "http://localhost:8080/api/v1")!
     }
     
     var path: String {
         switch self {
-        case .SearchIngredients:
+        case .SearchIngredients(_):
             return "/ingredients/search"
         }
     }
@@ -38,10 +38,12 @@ extension ReperecipeService: TargetType {
     }
     var sampleData: NSData {
         switch self {
-        case .SearchIngredients:
+        case .SearchIngredients(_):
             return "[{\"id\": \"1\",\"name\": \"イノシシ\",\"readingName\": [\"いのしし\"],\"category\": \"MEAT\"}".UTF8EncodedData
         }
     }
+    
+    var multipartBody: [Moya.MultipartFormData]? { return nil }
 }
 private extension String {
     var URLEscapedString: String {

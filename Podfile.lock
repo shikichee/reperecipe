@@ -1,29 +1,41 @@
 PODS:
-  - AccordionTableViewController (0.0.1)
+  - AccordionTableViewController (0.0.2)
   - ActionSheetPicker-3.0 (2.2.0)
   - Alamofire (3.4.1)
   - Cartography (0.6.0)
   - HxColor (2.0.0)
-  - Moya (6.5.0):
-    - Moya/Core (= 6.5.0)
-  - Moya/Core (6.5.0):
+  - Moya (7.0.0):
+    - Moya/Core (= 7.0.0)
+  - Moya-ObjectMapper (1.3.1):
+    - Moya-ObjectMapper/Core (= 1.3.1)
+  - Moya-ObjectMapper/Core (1.3.1):
+    - Moya (~> 7.0)
+    - ObjectMapper (~> 1.3)
+  - Moya-ObjectMapper/RxSwift (1.3.1):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift (~> 7.0)
+    - RxSwift (~> 2.0)
+  - Moya/Core (7.0.0):
     - Alamofire (~> 3.0)
     - Result (~> 2.0)
-  - ObjectMapper (1.3.0)
+  - Moya/RxSwift (7.0.0):
+    - Moya/Core
+    - RxSwift (~> 2.0)
+  - ObjectMapper (1.4.0)
   - Pages (0.6.3)
   - PagingMenuController (1.1.2)
   - Presentation (2.1.0):
     - Cartography
     - Pages (~> 0.6.2)
-  - R.swift (2.4.0):
-    - R.swift.Library (~> 2.2.0)
-  - R.swift.Library (2.2.0)
+  - R.swift (2.5.0):
+    - R.swift.Library (~> 2.3.0)
+  - R.swift.Library (2.3.0)
   - Realm (1.0.1):
     - Realm/Headers (= 1.0.1)
   - Realm/Headers (1.0.1)
   - RealmSwift (1.0.1):
     - Realm (= 1.0.1)
-  - Result (2.1.1)
+  - Result (2.1.3)
   - RxBlocking (2.6.0):
     - RxSwift (~> 2.5)
   - RxCocoa (2.6.0):
@@ -38,13 +50,15 @@ DEPENDENCIES:
   - AccordionTableViewController
   - ActionSheetPicker-3.0
   - HxColor
-  - Moya
+  - Moya-ObjectMapper (~> 1.3)
+  - Moya-ObjectMapper/RxSwift (~> 1.3)
+  - Moya/RxSwift
   - ObjectMapper
   - Pages
   - PagingMenuController
   - Presentation
   - R.swift
-  - RealmSwift
+  - RealmSwift (~> 1.0.1)
   - RxBlocking (~> 2.0)
   - RxCocoa (~> 2.0)
   - RxSwift (~> 2.0)
@@ -53,21 +67,22 @@ DEPENDENCIES:
   - Toucan
 
 SPEC CHECKSUMS:
-  AccordionTableViewController: 48b2581d8c49001a55851a3700f0921cfe8a4524
+  AccordionTableViewController: 67cf3a67994facd13be9288dcfb18c7944353254
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
   HxColor: dbf82e4363eaef1314f683514e8bb2716a00554d
-  Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
-  ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
+  Moya: f004b82418fb8165ee1fc9f86190db4b3611fda9
+  Moya-ObjectMapper: 52f15abd982efc8ba2ce3fc49619555c926c14a1
+  ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
   Pages: 71e80bc64040f1176297c327d080d80b7e74b38c
   PagingMenuController: a47a9669760b95f630cc3ef28bdce104f9107d14
   Presentation: b2a7fd95329ada58be129da65dbbdf6b39259772
-  R.swift: 0ef9c42dc6c94ac44a3c78a7639c73f855a8e159
-  R.swift.Library: 31a487b65381f37a7d203a6f1f935b43c9be35b0
+  R.swift: 01b9966e8dbe587a11ca2f65a1834dac2fa7b247
+  R.swift.Library: 75df6abfd22492c852136c4d7b6a9ca21664772a
   Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
   RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
-  Result: 822c879f145943320cc80a9a8372378e3d699fe4
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   RxBlocking: f2e0a7e74d5e9d3029d2b1118e2af01f583fbdd8
   RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
@@ -75,6 +90,6 @@ SPEC CHECKSUMS:
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
-PODFILE CHECKSUM: 160f785b97563d8b1f5a04d5469a73ec382ac2bd
+PODFILE CHECKSUM: 5bc98258f793ebf2b488817d5dc16cf2cf95f804
 
 COCOAPODS: 1.0.1

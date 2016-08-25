@@ -8,6 +8,10 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
+import Moya
+import Moya_ObjectMapper
 
 class EditIngredientsModalViewController: UIViewController {
     
@@ -18,6 +22,8 @@ class EditIngredientsModalViewController: UIViewController {
     @IBOutlet weak var newIngredientTextField: UITextField!
     
     var dataSource: UITableViewDataSource!
+    let provider = RxMoyaProvider<ReperecipeService>()
+    var repos = [IngredientsResponse]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +32,33 @@ class EditIngredientsModalViewController: UIViewController {
         tableView.registerNib(UINib(nibName: "EditIngredientsCell", bundle: nil), forCellReuseIdentifier: "EditIngredientsCell")
         searchView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
         searchView.layer.borderWidth = CGFloat(1)
+        
+        // 検索に
+        _ = newIngredientTextField.rx_text.debounce(0.5, scheduler: MainScheduler.instance).distinctUntilChanged().subscribeNext{ (text) in
+            guard !text.isEmpty else {
+                return
+            }
+            self.requestIngredientSearch(text)
+        }
     }
+    /// インクリメンタルサーチ
+    func requestIngredientSearch(text: String) {
+        self.provider.request(.SearchIngredients(text))
+            .mapArray(IngredientsResponse)
+            .subscribe { event -> Void in
+                switch event {
+                case .Next(let repos):
+                    self.repos = repos
+                case .Error(let error):
+                    print(error)
+                default:
+                    break
+                }
+        }
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)

@@ -14,19 +14,21 @@ target 'reperecipe' do
   pod 'Pages'
   pod 'PagingMenuController'
   pod 'Presentation'
-  pod 'RealmSwift'
+  pod 'RealmSwift', '~> 1.0.1'
   pod 'R.swift'
   pod 'SwiftDate'
   pod 'Toucan'
-  pod 'Moya'
-  pod 'RxSwift',    '~> 2.0'
-  pod 'RxCocoa',    '~> 2.0'
+  pod 'Moya/RxSwift'
+  pod 'Moya-ObjectMapper', '~> 1.3'
+  pod 'Moya-ObjectMapper/RxSwift', '~> 1.3'
+  pod 'RxSwift','~> 2.0'
+  pod 'RxCocoa','~> 2.0'
 
   target 'reperecipeTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RxBlocking', '~> 2.0'
-    pod 'RxTests',    '~> 2.0'
+    pod 'RxBlocking','~> 2.0'
+    pod 'RxTests','~> 2.0'
   end
 
   target 'reperecipeUITests' do
