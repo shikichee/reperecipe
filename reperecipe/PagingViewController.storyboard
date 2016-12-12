@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--MyRecipePagingViewController-->
+        <scene sceneID="48W-wO-X6Q">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyRecipePagingViewController" storyboardName="MyRecipe" referencedIdentifier="MyRecipePagingViewController" id="nIf-Yg-aZg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tss-tv-jUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180.5" y="802"/>
+        </scene>
+        <!--MenuPagingViewController-->
+        <scene sceneID="le4-WH-p13">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MenuPagingViewController" storyboardName="menu" referencedIdentifier="MenuPagingViewController" id="CTo-JW-kLL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obo-ER-Pgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180.5" y="904"/>
+        </scene>
+        <!--RefrigeratorPagingViewController-->
+        <scene sceneID="pIn-JL-Bsv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RefrigeratorPagingViewController" storyboardName="Refrigerator" referencedIdentifier="RefrigeratorPagingViewController" id="h50-oC-xgH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFG-7b-GD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200.5" y="1019"/>
+        </scene>
+        <!--ShoppingPagingViewController-->
+        <scene sceneID="xuW-yo-DS5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ShoppingPagingViewController" storyboardName="Shopping" referencedIdentifier="ShoppingPagingViewController" id="5C8-h6-c7Z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tda-Bm-eXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217.5" y="1110"/>
+        </scene>
+    </scenes>
+</document>

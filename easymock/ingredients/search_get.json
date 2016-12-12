@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "name": "イノシシ",
+        "readingName": [
+            "いのしし"
+        ],
+        "category": "MEAT"
+    },
+    {
+        "id": "2",
+        "name": "イサキ",
+        "readingName": [
+            "いさき"
+        ],
+        "category": "FISH"
+    }
+]

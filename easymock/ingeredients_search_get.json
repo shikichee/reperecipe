@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "name": "イノシシ",
+        "readingName": [
+            "いのしし"
+        ],
+        "category": "MEAT"
+    },
+    {
+        "id": "2",
+        "name": "イサキ",
+        "readingName": [
+            "いさき"
+        ],
+        "category": "FISH"
+    },
+    {
+        "id": "3",
+        "name": "木綿豆腐",
+        "readingName": [
+            "もめんどうふ",
+            "とうふ"
+        ],
+        "category": "BEANS"
+    }
+]
