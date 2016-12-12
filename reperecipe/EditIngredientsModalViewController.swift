@@ -20,10 +20,14 @@ class EditIngredientsModalViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var newIngredientTextField: UITextField!
+    @IBOutlet weak var searchWordsTableView: UITableView!
+    @IBOutlet weak var searchWordsTableViewHeight: NSLayoutConstraint!
     
     var dataSource: UITableViewDataSource!
     let provider = RxMoyaProvider<ReperecipeService>()
     var repos = [IngredientsResponse]()
+    
+    let bag   = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,10 @@ class EditIngredientsModalViewController: UIViewController {
         tableView.registerNib(UINib(nibName: "EditIngredientsCell", bundle: nil), forCellReuseIdentifier: "EditIngredientsCell")
         searchView.layer.borderColor = ReperecipeColor.Line.normal.CGColor
         searchView.layer.borderWidth = CGFloat(1)
+        
+//        searchWordsTableView.dataSource = SearchIngredientsTableView()
+//        searchWordsTableView.delegate = SearchIngredientsTableView()
+        searchWordsTableViewHeight.constant = CGFloat(0)
         
         // 検索に
         _ = newIngredientTextField.rx_text.debounce(0.5, scheduler: MainScheduler.instance).distinctUntilChanged().subscribeNext{ (text) in
@@ -49,6 +57,15 @@ class EditIngredientsModalViewController: UIViewController {
                 switch event {
                 case .Next(let repos):
                     self.repos = repos
+                    var names = Variable<[String]>([])
+                    for index in self.repos {
+                        names.value.append(index.name ?? "")
+                    }
+                    names.asDriver()
+                        .drive(self.searchWordsTableView.rx_itemsWithCellIdentifier("SearchIngredientsCell",cellType: SearchIngredientsCell.self)) { _, name, cell -> Void in
+                        cell.nameLabel?.text = name
+                        }.addDisposableTo(self.bag)
+                    print(repos)
                 case .Error(let error):
                     print(error)
                 default:

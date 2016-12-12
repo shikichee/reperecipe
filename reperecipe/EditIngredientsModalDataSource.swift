@@ -5,7 +5,7 @@
 //  Created by Takuya Shikichi on 2016/07/12.
 //  Copyright © 2016年 Takuya Shikichi. All rights reserved.
 //
-
+//
 import Foundation
 import UIKit
 

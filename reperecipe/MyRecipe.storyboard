@@ -38,7 +38,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_recipe_sub" translatesAutoresizingMaskIntoConstraints="NO" id="0At-Ri-t1F">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_recipe_sub" translatesAutoresizingMaskIntoConstraints="NO" id="0At-Ri-t1F">
                                         <rect key="frame" x="175" y="0.0" width="200" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="wuf-sq-XC6"/>

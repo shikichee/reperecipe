@@ -71,6 +71,8 @@
 		49D859001D1F86A5006D0479 /* reperecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D858FF1D1F86A5006D0479 /* reperecipeTests.swift */; };
 		49D8590B1D1F86A5006D0479 /* reperecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8590A1D1F86A5006D0479 /* reperecipeUITests.swift */; };
 		49DCE1DD1D378335005A3251 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DCE1DC1D378335005A3251 /* RecipeDetailViewController.swift */; };
+		49DE714E1D6F1C9200C7933A /* SearchIngredientsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DE714D1D6F1C9200C7933A /* SearchIngredientsTableView.swift */; };
+		49DE71501D6F247A00C7933A /* SearchIngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DE714F1D6F247A00C7933A /* SearchIngredientsCell.swift */; };
 		49E879E01D3673B1003639D5 /* RefrigeratorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E879DF1D3673B1003639D5 /* RefrigeratorModel.swift */; };
 		49F3190F1D5B2E4E00E73D0F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3190E1D5B2E4E00E73D0F /* UIView.swift */; };
 		BDA2ED65EE517BEEA67827D7 /* Pods_reperecipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0218F264224FEE0A62D9CD4 /* Pods_reperecipe.framework */; };
@@ -165,6 +167,8 @@
 		49D8590A1D1F86A5006D0479 /* reperecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reperecipeUITests.swift; sourceTree = "<group>"; };
 		49D8590C1D1F86A5006D0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DCE1DC1D378335005A3251 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		49DE714D1D6F1C9200C7933A /* SearchIngredientsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIngredientsTableView.swift; sourceTree = "<group>"; };
+		49DE714F1D6F247A00C7933A /* SearchIngredientsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIngredientsCell.swift; sourceTree = "<group>"; };
 		49E879DF1D3673B1003639D5 /* RefrigeratorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefrigeratorModel.swift; sourceTree = "<group>"; };
 		49F3190E1D5B2E4E00E73D0F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4D735AB123BF3F845D2C6C6C /* Pods-reperecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reperecipeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reperecipeUITests/Pods-reperecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				490792A11D34929300C15B3E /* EditIngredientsModalViewController.storyboard */,
 				490792A31D3498CE00C15B3E /* EditIngredientsModalViewController.swift */,
 				49422FC01D34C02400849795 /* EditIngredientsModalDataSource.swift */,
+				49DE714D1D6F1C9200C7933A /* SearchIngredientsTableView.swift */,
+				49DE714F1D6F247A00C7933A /* SearchIngredientsCell.swift */,
 				49422FC21D34C3BA00849795 /* EditIngredientsCell.swift */,
 				49422FC41D34C42800849795 /* EditIngredientsCell.xib */,
 				4970903C1D45E3E800EFEEA3 /* IngredientCellOfRecipe.xib */,
@@ -756,6 +762,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49DE714E1D6F1C9200C7933A /* SearchIngredientsTableView.swift in Sources */,
 				490792431D2E213900C15B3E /* AddRecipeModalViewController.swift in Sources */,
 				492F98361D59B6DB00D94571 /* UIImage.swift in Sources */,
 				499F92AF1D52BFF10057FFED /* ShoppingList.swift in Sources */,
@@ -763,6 +770,7 @@
 				490794641D60675B007EDD7E /* NSDate.swift in Sources */,
 				4929C0241D5858F8005EF60D /* IntroductionContainerViewController.swift in Sources */,
 				49309C0F1D4B44F5001611F2 /* R.generated.swift in Sources */,
+				49DE71501D6F247A00C7933A /* SearchIngredientsCell.swift in Sources */,
 				49D858ED1D1F86A5006D0479 /* ViewController.swift in Sources */,
 				490792931D30EA1F00C15B3E /* RefrigeratorRepository.swift in Sources */,
 				4989A57C1D2AA4990079BE50 /* RefrigeratorPagingViewController.swift in Sources */,

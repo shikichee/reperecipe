@@ -11,8 +11,14 @@ import RealmSwift
 class Ingredient: Object {
     dynamic var id = NSUUID().UUIDString
     dynamic var name = ""
+    dynamic var category = ""
+    var readingName = List<ReadingIngredientName>()
     
     override static func primaryKey() -> String? {
         return "id"
     }
+}
+
+class ReadingIngredientName: Object {
+    dynamic var name = ""
 }
